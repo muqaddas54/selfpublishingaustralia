@@ -1036,14 +1036,14 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
 
  .hero-section {
     max-width: 1180px;
-    margin-top: 150px;
+    margin-top: 250px;
     /* margin: 0 auto; */
     padding: 0 30px;
     display: flex;
     gap: 30px;
   }
   .left-content { width: 61%; margin-left: 30px; }
-  .right-form { width: 39%;height: 750px; border: 4px solid #1c2228; padding: 20px; margin-top: 160px; margin-left: -80px; } /* Pic wala dark border */
+  .right-form { width: 39%;height: 750px; border: 4px solid #1c2228; padding: 20px; margin-top: -80px; margin-left: -80px; } /* Pic wala dark border */
 
   /* LEFT TEXT - PIC JAISE COLORS */
   .left-content h1 { font-family:  'Playfair Display'; line-height: 1.1;    font-size: 50px !important; color: #222e3e; font-weight: 500; }
@@ -1640,6 +1640,15 @@ width: auto;  margin-left: 100px;
     margin-left: 60px;
     display:block;
 }
+.btn-outline{
+   margin-top: 65px;
+}
+.btn-orange,
+.btn-outline:hover{
+   left: 0;
+   margin-left: 60px;
+   right: 0;
+}
 
 .marquee{
 
@@ -1734,1655 +1743,6 @@ width: auto;  margin-left: 100px;
 
 
 
-  /* PURA SECTION - 1 HI BACKGROUND IMG */
-  .main-section {
-    position: relative;
-    width: 100%;
-  
-    min-height: 100vh;
-    padding: 60px 5%; /* 20px ki jagah % ki taake screen se bahar na jaye */
-    background-image: url('bg-top.webp') ; /* YAHAN 1 HI IMG LAGAY GI */
-    background-repeat: no-repeat;
-  background-size: 100% 100%;    /* background-position: center; */
-    /* background: #FDF6F8; */ /* Purani wali hata do */
-  }
-
-  .container {
-    max-width: 1140px; /* 1200 se 1140 kiya */
-    margin: 0 auto;
-    margin-top: 100px;
-    position: relative;
-    z-index: 2;
-  }
-
-  /* HEADING WALA HISSA - CURLY BRACKETS */
-  .top-heading {
-    text-align: center;
-    position: relative;
-    padding: 0 150px; /* thora kam kiya */
-    margin-bottom: 30px;
-  }
-  .bracket-left {
-    position: absolute; left: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  height: 145px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 36px;background-image: url(bracket-left.webp);
-    background-repeat: no-repeat;
-  background-size: 100% 100%;   
-  }
-  .bracket-right {
-    position: absolute; right: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  height: 145px;
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 36px;
-  background-image: url(bracket-right.webp);
-    background-repeat: no-repeat;
-  background-size: 100% 100%; 
-  }
-
-  .top-heading h2 {
-        color: #222e3e !important;
-    font-size: 35px !important;
-    font-family: 'Playfair Display', serif;
-    /* font-size: 28px; */
-    /* color: #4A5A6A; */
-    line-height: 1.5;
-   position:relative;
-   top: -80px;
-    font-weight: 700;
-  }
-  .top-heading h2 span { color: #f5b400; }
-
-  /* WHY CHOOSE SECTION */
-  .why-choose {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-    margin-top: -750px;
-  }
-  .why-choose-content { width: 49%; }
-  .why-choose h3 {
-     color: #222e3e;
-  display: block;
-  font-family: tiempos-regular;
-  font-size: 45px;
-  font-weight: 500;
-  }
-  .why-choose h3 span { color: #f5b400; }
-  .why-choose p {     font-size: 20px !important;
-    padding-left: 0; margin-top: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4; color: #000; }
-
-  /* FEATURES LIST WITH IMAGES */
-  .feature { display: flex; align-items: flex-start; gap: 40px; margin-bottom: 50px; }
-  .feature.reverse { flex-direction: row-reverse; }
-  .feature-img { width: 40%; flex-shrink: 0; }
-  .feature-img img { width: 480px; margin-left: -50px; margin-top: 320px; height: 460px; display: block; } /* display block add */
-  .feature-text {   margin-top: 20px;}
-  .feature-text h4 {  
-    font-size: 22px; font-weight: 700; color: #222e3e; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-bottom: 10px;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .feature-text h4::before { content: '✓'; color: #E67E22; font-size: 20px;  }
-  .feature-text p {  font-size: 18px !important;   width: 500px;
-    padding-left: 0; margin-top: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4; color: #000; }
-
-  /* BUTTONS */
-  .btn-group { display: flex; gap: 15px; justify-content: flex-end; margin-top: 40px; }
-  .btn-oranges {
-   background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01;
-    border-radius: 8px;
-    color: #222e3e;
-    display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* margin-top: 20px; */
-    padding: 16px 13px;
-    width: 250px;
-    height: 80px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-  }
-  .btn-oranges:hover{
-     background: #fff;
-    border: 2px solid #222e3e;
-    color: #222e3e;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* padding: 10px 144px; */
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    border-radius: 8px;
-    width: 250px;
-    color: #222e3e;
-    /* margin-top: 10px; */
-    display: inline-block;
-  }
-  .btn-outlines {
-    background: #fff;
-    border: 2px solid #222e3e;
-    color: #222e3e;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* padding: 10px 144px; */
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    border-radius: 8px;
-    width: 190px;
-    color: #222e3e;
-    /* margin-top: 10px; */
-    display: inline-block;  }
-.btn-outlines:hover{
-     background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01;
-    border-radius: 8px;
-    color: #222e3e;
-    display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* margin-top: 20px; */
-    padding: 16px 13px;
-    width: 190px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-}
-
-
-
-
-/* ======================================
-   Large Desktop (1400px+)
-====================================== */
-/* @media (min-width:1400px){
-
-.container{
-    max-width:1350px;
-}
-
-.top-heading{
-    padding:0 180px;
-}
-
-.top-heading h2{
-    font-size:42px !important;
-}
-
-.feature-img img{
-    width:560px;
-    height:auto;
-}
-
-.feature-text{
-    margin-left:500px;
-}
-
-} */
-
-
-/* ======================================
-   Tablet
-====================================== */
-@media (max-width:992px){
-
-.main-section{
-    padding:40px 25px;
-    background-size:cover;
-    margin-top: -50px;
-    margin-top:50px;
-}
-
-.container{
-    margin-top:40px;
-    padding-top:20px;
-}
-
-.top-heading{
-    padding:0;
-}
-
-.top-heading h2{
-    top:0;
-    /* font-size:35px !important; */
-    font-weight:500;
-    line-height:1.1;
-    
-    max-width:700px;
-    margin:0 auto;
-     margin-top:-40px;
-}
-
-.bracket-right{position: absolute; right: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  margin-top:40px;
-  height: 145px;
-  right: 50px;
-  position: absolute;
-  top: 0;
-  width: 36px;
-  background-image: url(bracket-right.webp);
-    background-repeat: no-repeat;
-  background-size: 100% 100%;}
-.bracket-left{
-   margin-top:40px;
-     position: absolute; left: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  height: 145px;
-  left: 50px;
-  position: absolute;
-  top: 0;
-}
-
-/* IMAGE */
-
-.feature-img{
-    width:100%;
-    text-align:center;
-}
-
-.feature-img img{
-    width:100%;
-    max-width:520px;
-    height:auto;
-    margin:35px auto;
-}
-
-/* WHY CHOOSE */
-
-.why-choose{
-    margin-top:0;
-    /* justify-content:center; */
-}
-
-.why-choose-content{
-    width:100%;
-    position:relative;
-    right:100px;
-    /* text-align:left; */
-    width: 700px;
-}
-
-.why-choose h3{
-     /* width: 500px;
-     margin-left: 150px;
-     text-align: center; */
-    font-size:44px ;
-}
-
-.why-choose p{
-  /* width: 600px;
-   margin-left: 100px; */
-    font-size:18px !important;
-}
-
-/* FEATURE */
-
-.feature{
-    display:block;
-   
-}
-
-.feature-text{
-    width:100%;
-    margin:0 auto;
-    /* text-align:center; */
-}
-
-.feature-text h4{
-    margin:0 0 12px;
-     margin-top:20px;
-    /* justify-content:center; */
-    /* text-align:center; */
-    font-size:22px;
-}
-
-/* .feature-text h4::before{
-   
-} */
-
-.feature-text p{
-    width:100%;
-    max-width:650px;
-    margin:0 auto 25px;
-    /* text-align:center; */
-    font-size:19px !important;
-    line-height:1.8;
-}
-
-/* BUTTON */
-
-.btn-group{
-    justify-content:left;
-    flex-wrap:wrap;
-    margin-left:150px;
-    margin-top:-30px;
-
-}
- .btn-oranges {
-   /* background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01; */
-    /* border-radius: 8px; */
-    /* color: #222e3e; */
-    /* display: inline-block; */
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    /* font-size: large; */
-    /* outline: none; */
-    /* margin-top: 20px; */
-    /* padding: 16px 13px; */
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-  }
-
-}
-
-
-
-/* ======================================
-   Mobile
-====================================== */
-@media (max-width:768px){
-
-.main-section{
-    padding:40px 18px;
-}
-.bracket-right{position: absolute; right: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  margin-top:40px;
-  height: 145px;
-  right: 5px;
-  position: absolute;
-  top: 0;
-  width: 36px;
-  background-image: url(bracket-right.webp);
-    background-repeat: no-repeat;
-  background-size: 100% 100%;}
-.bracket-left{
-   margin-top:40px;
-     position: absolute; left: 0; top: 50%;
-    transform: translateY(-50%);
- content: "";
-  height: 145px;
-  left: 5px;
-  position: absolute;
-  top: 0;
-}
-
-.top-heading{
-    width:100%;
-    max-width:100%;
-    padding:0;
-    margin:0 auto 25px;
-}
-/* .bracket-left,
-.bracket-right{
-  display: none;
-} */
-.top-heading h2{
-    width:100%;
-    max-width:100%;
-    margin-bottom: 10px;
-    font-size:26px !important;
-    line-height:1.31;
-    text-align:center;
-    word-break:normal;
-}
-.feature-img{
-    width:100%;
-    text-align:center;
-}
-
-.feature-img img{
-    width:1400px;
-    max-width:520px;
-    height:auto;
-    margin:35px auto;
-    margin-top: 20px;
-}
-
-.why-choose{
-    justify-content:center;
-}
-
-.why-choose-content{
-    width:100%;
-    max-width:100%;
-    margin:0 auto;
-    /* margin-top: 480px; */
-    padding:0 12px;
-    text-align:center;
-       width:100%;
-    position:relative;
-    left:0px;
-    /* text-align:left; */
-    /* width: 700px; */
-}
-
-.why-choose h3{
-    width:100%;
-        font-family: 'Playfair Display', serif;
-    font-size:40px ;
-    line-height:1.1;
-    text-align:center;
-}
-
-.why-choose p{
-    width:100%;
-    max-width:600px;
-    margin:15px auto 0;
-    font-size:20px !important;
-    line-height:1.8;
-    text-align:center;
-}
-/* .feature-img img{
-  position: relative;
-  bottom: 300px;
-} */
-
-.feature-text{
-    width:100%;
-  
-    text-align: center;
-    /* max-width:400px; */
-    margin:0 auto;
-   
-    padding:0 12px;
-}
-.feature-text p{
-   width:100%;
-    max-width:600px;
-    margin:15px auto 0;
-    font-size:20px !important;
-    line-height:1.8;
-    text-align:center;
-}
-.feature-text h4{
-   width: 100%;
-   position: relative;
-   left: 170px;
-  font-weight: 700px;
-  margin-top: 10px;
-  text-align: center;
-
-  font-size: 24px;
-}
-.btn-oranges {
-  /* padding: 0px 30px; */
-  height: 50px;
-
-  
-}
-.btn-outlines{
-  height: 50px;
-  /* margin-top: 20px; */
-}
-.feature-text h4::before{
-    display:none;
-}
-.btn-group{
-  display: block;
-  align-items: center;
-  justify-content: center;
-text-align: center;
-/* margin-bottom: 90px; */
-position: relative;
-right: 70px;
-
-
-}
-}
-
-
-@media (max-width:600px){
-
-/* ================= MAIN SECTION ================= */
-
-.main-section{
-    padding:40px 15px;
-}
-
-.top-heading h2{
-    font-size:28px !important;
-}
-
-.why-choose{
-    margin-top:0;
-}
-
-.why-choose-content{
-    width:100%;
-    padding:0;
-}
-
-.why-choose h3{
-    font-size:45px ;
-    text-align:center;
-}
-
-.why-choose p{
-    font-size:18px !important;
-    max-width: 400px;
-    text-align:center;
-}
-
-.feature{
-    display:block;
-}
-
-.feature-img img{
-    width:100%;
-    height:auto;
-    margin:20px auto;
-}
-
-.feature-text{
-    text-align:center;
-}
-
-.feature-text h4{
-    left:0;
-    justify-content:center;
-    font-size: 24px;
-}
-
-.feature-text p{
-    width:100%;
-    font-size:19px !important;
-}
-
-.btn-group{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    gap:15px;
-    right:0;
-    margin:20px 0;
-}}
-
-
-
-@media (max-width:400px){
-
-.main-section{
-  margin-top: -40px;
-    padding:40px 18px;
-}
-
-.top-heading{
-    width:100%;
-    max-width:100%;
-    padding:0;
-    margin:0 auto 25px;
-}
-.bracket-left,
-.bracket-right{
-  display: none;
-}
-.top-heading h2{
-    width:100%;
-    max-width:100%;
-    margin-bottom: 10px;
-    font-size:26px !important;
-    line-height:1.31;
-    text-align:center;
-    word-break:normal;
-}
-
-
-.why-choose{
-    justify-content:center;
-}
-
-.why-choose-content{
-    width:100%;
-    max-width:100%;
-    margin:0 auto;
-    /* margin-top: 480px; */
-    padding:0 12px;
-    text-align:center;
-}
-
-.why-choose h3{
-    width:100%;
-        font-family: 'Playfair Display', serif;
-    font-size:35px !important;
-    line-height:1.1;
-    text-align:center;
-}
-
-.why-choose p{
-    width:100%;
-    max-width:300px;
-    margin:15px auto 0;
-    font-size:17px !important;
-    line-height:1.4;
-    text-align:center;
-}
-/* .feature-img img{
-  position: relative;
-  bottom: 300px;
-} */
-
-.feature-text{
-    width:100%;
-    max-width:400px;
-    margin:0 auto;
-   
-    padding:0 12px;
-}
-.feature-text p{
-  width:100%;
-  font-size: 17px;
-    max-width:300px;
-}
-.feature-text h4{
-  font-weight: 700px;
-  margin-top: 10px;
-  text-align: center;
-  /* margin-left: 30px; */
-  font-size: 19px;
-}
-.btn-oranges {
-  /* padding: 0px 30px; */
-  height: 50px;
-
-  
-}
-.btn-outlines{
-  height: 40px;
-  margin-top: 20px;
-}
-.feature-text h4::before{
-    display:none;
-}
-.btn-group{
-  display: block;
-  align-items: center;
-  justify-content: center;
-text-align: center;
-/* margin-bottom: 90px; */
-position: relative;
-bottom: 40px;
-
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .services-section {
-    width: 100%;
-    padding: 70px 5%;
-    margin-top: 30px;
-    background: #fff;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  /* TOP HEADING - PIC KE HISAB SE */
-  .section-header {
-    max-width:760px;
-    width:100%;
-    margin:0 auto 60px;
-    text-align:center;
-    
-  }
-  .section-header h2 {
-   color: #222e3e !important;
-    font-size: 50px !important;
-    font-family: 'Playfair Display', serif;
-    /* font-size: 28px; */
-    /* color: #4A5A6A; */
-    line-height: 1.2;
-   position:relative;
-   top: -80px;
-   margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .section-header h2 span { color: #f5b400; } /* orange "Amazon Australia" */
-  .section-header p {
-    font-size: 20px !important;
-    padding-left: 0; margin-top: -80px;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4; color: #000;
-  }
-
-  /* GRID FOR BOXES - 2 COLUMN JAISA PIC ME HAI */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  /* SINGLE BOX - BORDER, HEIGHT WIDTH PIC KE MUTABIQ */
-  .service-box {
-    border: 3px solid #fa9a0a ;/* orange border */
-    border-radius: 18px; /* box ka corner round */
-    padding: 35px 20px;
-    text-align: center;
-    
-    background: #fff;
-    min-height: 380px; /* sab box ki height barabar */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s ease;
-  }
-  /* .service-box:hover {
-    box-shadow: 0 8px 25px rgba(240, 138, 74, 0.2);
-    transform: translateY(-5px);
-  } */
-  
-  .service-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px auto;
-  }
-  .service-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .service-box h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 15px;
-    font-weight: 400;
-  }
-  .service-box p {
-    font-size: 16px;
-    color: #0a0a0a;
-    line-height: 1.7;
-    flex-grow: 1; /* taake button neeche rahe */
-    margin-bottom: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-  .btn-read {
-    background: #f5b400; /* orange button */
-    color: #000000;
-    padding: 11px 24px;
-    border: none;
-    border-radius: 6px;
-    font-size: large !important;
-    font-family: arial;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    align-self: center;
-  }
-
-
-  /* LAST BOX CENTER ME - "Author Website" */
-  .service-box.center {
-    grid-column: 1 / -1; 
-    max-width: 450px;
-    margin: 0 auto;
-  }
-
-  /* ======================================
-      Large Desktop (1400px+)
-====================================== */
-
-/* @media (min-width:1400px){
-
-.container{
-    max-width:1400px;
-}
-
-.section-header{
-    max-width:850px;
-}
-
-.section-header h2{
-    font-size:46px !important;
-}
-
-.section-header p{
-    font-size:22px !important;
-}
-
-.services-grid{
-    gap:28px;
-}
-
-.service-box{
-    min-height:400px;
-}
-.service-box.center{
-    max-width: 580px;
-}
-
-} */
-
-
-/* ======================================
-          Laptop
-====================================== */
-/* 
-@media (max-width:1200px){
-
-.container{
-    max-width:1100px;
-}
-
-.section-header{
-    max-width:760px;
-}
-
-.section-header h2{
-    font-size:38px !important;
-    top:-30px;
-}
-
-.section-header p{
-    font-size:19px !important;
-}
-
-.service-box{
-    min-height:380px;
-}
-
-} */
-
-
-/* ======================================
-          Tablet
-====================================== */
-
- @media (max-width:992px){
-
-.services-section{
-    padding:60px 25px;
-    margin-top:-100px;
-}
-
-.section-header{
-    max-width:680px;
-    margin:0 auto 45px;
-}
-
-.section-header h2{
-    top:0;
-    font-size:44px ;
-    font-weight:500;
-    line-height:1.1;
-}
-
-.section-header p{
-    font-size:18px !important;
-    line-height:1.8;
-    max-width:650px;
-    margin:15px auto 0;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
-    gap:24px;
-}
-
-.service-box{
-   
-    width:100%;
-    max-width: 50%;
-    min-height:auto;
-    margin-left: 220px;
-    padding:35px 25px;
-}
-.service-box.center{
-   
-    width:100%;
-    max-width: 50%;
-    min-height:auto;
-    padding:35px 25px;
-}
-
-.service-icon{
-    width:70px;
-    height:70px;
-}
-
-.service-box h3{
-    font-size:24px;
-}
-
-.service-box p{
-    font-size:17px;
-}
-
-} 
-
-
-/* ======================================
-            Mobile
-====================================== */
-
-@media (max-width:768px){
-
-.services-section{
-    padding:50px 18px;
-    margin-top: -120px;
-}
-
-.section-header{
-    max-width:100%;
-    margin-bottom:35px;
-}
-
-.section-header h2{
-    top:0;
-    font-size:36px;
-    font-weight:500;
-    line-height:1;
-}
-.section-header h2 br{
-  display: none;
-}
-.section-header h2 span br{
-  display: none;
-}
-.section-header p{
-    max-width:540px;
-    margin:16px auto 0;
-    font-size:22px !important;
-    line-height:1.8;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-     
-}
-
-.service-box{
-
-    width:100%;
-    max-width:66%;
-    position: relative;
-    right: 100px;
-    padding:30px 20px;
-    min-height:auto;
-   
-}
-.service-box.center{
-  position: relative;
-    left: 0px;
-    width:100%;
-    max-width:66%;
-    padding:30px 20px;
-    min-height:auto;
-}
-
-.service-icon{
-    width:65px;
-    height:65px;
-}
-
-.service-box h3{
-    font-size:22px;
-}
-
-.service-box p{
-    font-size:16px;
-}
-
-.btn-read{
-    /* width:100%; */
-    font-size: 8px;
-    font-weight: 70;
-    /* max-width:150px; */
-    padding: 8px 16px;
-}
-
-}
-
-
-  
-
-@media (max-width:600px){
-
-/* ================= MAIN SECTION ================= */
-
-
-
-/* ================= SERVICES ================= */
-
-.services-section{
-    padding:40px 15px;
-}
-
-.section-header h2{
-    font-size:36px;
-}
-
-.section-header p{
-    font-size:19px !important;
-    max-width: 500px;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
-}
-
-.service-box,
-.service-box.center{
-    width:100%;
-    max-width:80%;
-    margin:0;
-    right:0;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    left:55px;
-}
-
-.service-box h3{
-    font-size:22px;
-}
-
-.service-box p{
-    font-size:16px;
-}
-}
-@media (max-width:400px){
-
-.services-section{
-    padding:50px 18px;
-    margin-top: -200px;
-}
-
-.section-header{
-    max-width:100%;
-    margin-bottom:35px;
-}
-
-.section-header h2{
-    top:0;
-    font-size:38px !important;
-    font-weight:500;
-    line-height:1;
-}
-.section-header h2 br{
-  display: none;
-}
-.section-header h2 span br{
-  display: none;
-}
-.section-header p{
-    max-width:340px;
-    margin:15px auto 0;
-    font-size:18px !important;
-    line-height:1.8;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
-    gap:25px;
-     
-}
-
-.service-box{
-
-    width:100%;
-    max-width:100%;
-    position: relative;
-    left: 0px;
-    /* margin: 0px; */
-    padding:30px 20px;
-    min-height:auto;
-   
-}
-.service-box.center{
-  position: relative;
-    left: 0px;
-    width:100%;
-    max-width:100%;
-    padding:30px 20px;
-    min-height:auto;
-}
-
-.service-icon{
-    width:65px;
-    height:65px;
-}
-
-.service-box h3{
-    font-size:22px;
-}
-
-.service-box p{
-    font-size:16px;
-}
-
-.btn-read{
-    /* width:100%; */
-    font-size: 8px;
-    font-weight: 70;
-    /* max-width:150px; */
-    padding: 8px 16px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .tsp-testimonials-section {
-    position: relative;
-    width: 100%;
-  
-    min-height: 100vh;
-    padding: 60px 5%; /* 20px ki jagah % ki taake screen se bahar na jaye */
-    background-image: url('bg-top.webp') ; /* YAHAN 1 HI IMG LAGAY GI */
-    background-repeat: no-repeat;
-  background-size: 100% 100%;    /* background-position: center; */
-    /* background: #FDF6F8; */ /* Purani wali hata do */
-    font-family: 'Lato', sans-serif;
-  }
-
-  .tsp-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* TOP HEADING */
-  .tsp-section-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .tsp-section-header h2 {
-       color: #222e3e !important;
-    font-size: 50px !important;
-    font-family: 'Playfair Display', serif;
-    /* font-size: 28px; */
-    /* color: #4A5A6A; */
-    line-height: 1.2;
-   position:relative;
-   /* top: -80px; */
-    font-weight: 500;
-  }
-  .tsp-section-header h2 span { color: #f5b400; } /* orange "Australian" */
-  .tsp-section-header p {
-   font-size: 16.5px !important; margin-top: 10px;
-    padding-left: 0;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4;
-     color: #000;
-     line-height: 1.2;
-  
-  }
-
-  /* GRID FOR CARDS - 2 COLUMN */
-  .tsp-testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-  }
-
-  /* SINGLE CARD - BORDER + HEIGHT PIC KE HISAB SE */
-  .tsp-testimonial-card {
-    /* margin-top: -20px; */
-    border: 2px solid #fa9a0a; /* orange border */
-    border-radius: 20px; /* round corner */
-    background: #fa9a0a13; /* light pink bg inside card */
-    padding: 35px 30px;
-    text-align: center;
-    min-height: 320px; /* sab card ki height barabar */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    transition: all 0.3s ease;
-  }
-  /* .tsp-testimonial-card:hover {
-    box-shadow: 0 8px 20px rgba(240, 138, 74, 0.15);
-    transform: translateY(-3px);
-  } */
-
-  /* CIRCLE IMAGE */
-  .tsp-client-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-  
-    margin-bottom: 20px;
-    border: 2px solid #fa9a0a; /* orange ring */
-  }
-  .tsp-client-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* CARD CONTENT */
-  .tsp-quote-title {
-    font-family: 'Playfair Display', serif;
-    font-size: medium;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
-  
-  .tsp-client-info {
-    font-size: medium;
-    color: #fa9a0a; /* orange name */
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-
-  .tsp-quote-text {
-    font-size: small;
-    color: #1f1f1f;
-    line-height: 1.7;
-    flex-grow: 1; /* taake sab card barabar rahen */
-  }
-
-  /* MOBILE RESPONSIVE */
-/* ==========================================
-   LARGE DESKTOP (1400px+)
-========================================== */
-/* @media (min-width:1400px){
-
-.tsp-container{
-    max-width:1400px;
-}
-
-.tsp-section-header{
-    max-width:900px;
-    margin:0 auto 70px;
-}
-
-.tsp-section-header h2{
-    font-size:48px !important;
-    line-height:1.2;
-}
-
-.tsp-section-header p{
-    font-size:20px !important;
-    line-height:1.7;
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.tsp-testimonial-card{
-    min-height:340px;
-    padding:35px 25px;
-}
-
-.tsp-client-img{
-    width:90px;
-    height:90px;
-}
-
-.tsp-quote-title{
-    font-size:21px;
-}
-
-.tsp-client-info{
-    font-size:16px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.7;
-}
-
-} */
-
-
-/* ==========================================
-   LAPTOP
-========================================== */
-/* @media (max-width:1200px){
-
-.tsp-container{
-    max-width:1100px;
-}
-
-.tsp-section-header{
-    max-width:760px;
-    margin:0 auto 60px;
-}
-
-.tsp-section-header h2{
-    font-size:40px !important;
-}
-
-.tsp-section-header p{
-    font-size:18px !important;
-}
-
-.tsp-testimonials-grid{
-    gap:25px;
-}
-
-.tsp-testimonial-card{
-    padding:35px 25px;
-}
-
-} */
-
-
-/* ==========================================
-   TABLET
-========================================== */
-@media (max-width:992px){
-
-.tsp-testimonials-section{
-    padding:70px 30px;
-}
-
-.tsp-container{
-    max-width:700px;
-}
-
-.tsp-section-header{
-    width:100%;
-    max-width:700px;
-    margin:0 auto 50px;
-}
-
-.tsp-section-header h2{
-    font-size:44px !important;
-}
-
-.tsp-section-header p{
-    font-size:17px !important;
-    line-height:1.2;
-    
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-}
-
-.tsp-testimonial-card{
-   max-width:600px;
-    min-height:300px;
-    padding:30px 22px;
-}
-
-.tsp-client-img{
-    width:80px;
-    height:80px;
-}
-
-.tsp-quote-title{
-    font-size:19px;
-}
-
-.tsp-client-info{
-    font-size:16px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.7;
-}
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-@media (max-width:768px){
-
-.tsp-testimonials-section{
-    padding:55px 18px;
-}
-
-.tsp-container{
-    max-width:90%;
-}
-
-.tsp-section-header{
-    width:100%;
-    margin-bottom:40px;
-}
-
-.tsp-section-header h2{
-    font-size:44px !important;
-    line-height:1;
-}
-.tsp-section-header h2 br{
-  display: none;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-    line-height:1.7;
-    
-}
-
-.tsp-section-header p br{
-    display:none;
-}
-
-/* ONLY MOBILE = ONE CARD */
-
-.tsp-testimonials-grid{
-    grid-template-columns:2,fr;
-    gap:22px;
-      
-     /* max-width:80%; */
-}
-
-.tsp-testimonial-card{
-
-    min-height:auto;
-    margin-top:0;
-    padding:50px 22px;
-}
-
-.tsp-client-img{
-    width:75px;
-    height:75px;
-}
-
-.tsp-quote-title{
-    font-size:20px;
-}
-
-.tsp-client-info{
-    font-size:15px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.8;
-}
-
-}
-
-@media (max-width:600px){
-
-
-
-
-
-
-.tsp-testimonials-section{
-    padding:40px 15px;
-}
-
-.tsp-section-header h2{
-    font-size:45px !important;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:1fr;
-}
-
-.tsp-testimonial-card{
-    width:60%;
-    padding:25px 18px;
-    margin-left: 100px;
-}
-
-.tsp-client-img{
-    width:70px;
-    height:70px;
-}
-
-.tsp-quote-title{
-    font-size:18px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-}
-
-}
-
-
-
-@media (max-width:400px){
-
-.tsp-testimonials-section{
-    padding:55px 18px;
-}
-
-.tsp-container{
-    max-width:90%;
-}
-
-.tsp-section-header{
-    width:100%;
-    margin-bottom:40px;
-}
-
-.tsp-section-header h2{
-    font-size:38px !important;
-    line-height:1;
-}
-.tsp-section-header h2 br{
-  display: none;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-    line-height:1.7;
-    
-}
-
-.tsp-section-header p br{
-    display:none;
-}
-
-/* ONLY MOBILE = ONE CARD */
-
-.tsp-testimonials-grid{
-    grid-template-columns:1fr;
-    gap:22px;
-}
-
-.tsp-testimonial-card{
-  
-    width:100%;
-    max-width:90%;
-    position: relative;
-    margin-left: 0px;
-    left: 15px;
-    /* margin: 0px; */
-    padding:30px 20px;
-    min-height:auto;
-}
-
-.tsp-client-img{
-    width:75px;
-    height:75px;
-}
-
-.tsp-quote-title{
-    font-size:20px;
-}
-
-.tsp-client-info{
-    font-size:15px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.8;
-}
-
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -3399,13 +1759,15 @@ bottom: 40px;
   }
 
   .spa-container {
-    max-width: 750px;
+    width: 100%;
     margin: 0 auto;
   }
 
   /* TOP HEADING */
   .spa-section-header {
     text-align: center;
+    max-width: 70%;
+   margin-left: 150px;
     margin-bottom: 60px;
   }
   .spa-section-header h2 {
@@ -3422,11 +1784,12 @@ bottom: 40px;
   }
   .spa-section-header h2 span { color: #f5b400; } /* orange "Amazon Publishing Process" */
   .spa-section-header p {
+ 
 
    font-size: 19px !important; margin-top: 10px;
-    padding-left: 0;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4;
+    padding-left: 0;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.6;
      color: #000;
-     line-height: 1.2;
+     line-height: 1.4;
   }
 
   /* GRID FOR CARDS - 2 COLUMN */
@@ -3965,7 +2328,9 @@ margin-left: 160px;
     max-width:30px; */
     text-align:center;
     margin-top: -5px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 50px;
 }
 
 }
@@ -4032,6 +2397,466 @@ margin-left: 160px;
 
 
 
+  .services-section {
+    width: 100%;
+    padding: 70px 5%;
+    margin-top: 30px;
+    background: #fff;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* TOP HEADING - PIC KE HISAB SE */
+  .section-header {
+    max-width:760px;
+    width:100%;
+    margin:0 auto 60px;
+    text-align:center;
+    
+  }
+  .section-header h2 {
+   color: #222e3e !important;
+    font-size: 50px !important;
+    font-family: 'Playfair Display', serif;
+    /* font-size: 28px; */
+    /* color: #4A5A6A; */
+    line-height: 1.2;
+   position:relative;
+   top: -80px;
+   margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .section-header h2 span { color: #f5b400; } /* orange "Amazon Australia" */
+  .section-header p {
+    font-size: 20px !important;
+    padding-left: 0; margin-top: -80px;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4; color: #000;
+  }
+
+  /* GRID FOR BOXES - 2 COLUMN JAISA PIC ME HAI */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* SINGLE BOX - BORDER, HEIGHT WIDTH PIC KE MUTABIQ */
+  .service-box {
+    border: 3px solid #fa9a0a ;/* orange border */
+    border-radius: 18px; /* box ka corner round */
+    padding: 35px 20px;
+    text-align: center;
+    
+    background: #fff;
+    min-height: 380px; /* sab box ki height barabar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  /* .service-box:hover {
+    box-shadow: 0 8px 25px rgba(240, 138, 74, 0.2);
+    transform: translateY(-5px);
+  } */
+  
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+  }
+  .service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .service-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  .service-box p {
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 1.7;
+    flex-grow: 1; /* taake button neeche rahe */
+    margin-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .btn-read {
+    background: #f5b400; /* orange button */
+    color: #000000;
+    padding: 11px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: large !important;
+    font-family: arial;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+  }
+
+
+  /* LAST BOX CENTER ME - "Author Website" */
+  .service-box.center {
+    grid-column: 1 / -1; 
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  /* ======================================
+      Large Desktop (1400px+)
+====================================== */
+
+/* @media (min-width:1400px){
+
+.container{
+    max-width:1400px;
+}
+
+.section-header{
+    max-width:850px;
+}
+
+.section-header h2{
+    font-size:46px !important;
+}
+
+.section-header p{
+    font-size:22px !important;
+}
+
+.services-grid{
+    gap:28px;
+}
+
+.service-box{
+    min-height:400px;
+}
+.service-box.center{
+    max-width: 580px;
+}
+
+} */
+
+
+/* ======================================
+          Laptop
+====================================== */
+/* 
+@media (max-width:1200px){
+
+.container{
+    max-width:1100px;
+}
+
+.section-header{
+    max-width:760px;
+}
+
+.section-header h2{
+    font-size:38px !important;
+    top:-30px;
+}
+
+.section-header p{
+    font-size:19px !important;
+}
+
+.service-box{
+    min-height:380px;
+}
+
+} */
+
+
+/* ======================================
+          Tablet
+====================================== */
+
+ @media (max-width:992px){
+
+.services-section{
+    padding:60px 25px;
+    margin-top:-100px;
+}
+
+.section-header{
+    max-width:680px;
+    margin:0 auto 45px;
+}
+
+.section-header h2{
+    top:0;
+    font-size:44px ;
+    font-weight:500;
+    line-height:1.1;
+}
+
+.section-header p{
+    font-size:18px !important;
+    line-height:1.8;
+    max-width:650px;
+    margin:15px auto 0;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.service-box{
+   
+    width:100%;
+    max-width: 50%;
+    min-height:auto;
+    margin-left: 220px;
+    padding:35px 25px;
+}
+.service-box.center{
+   
+    width:100%;
+    max-width: 50%;
+    min-height:auto;
+    padding:35px 25px;
+}
+
+.service-icon{
+    width:70px;
+    height:70px;
+}
+
+.service-box h3{
+    font-size:24px;
+}
+
+.service-box p{
+    font-size:17px;
+}
+
+} 
+
+
+/* ======================================
+            Mobile
+====================================== */
+
+@media (max-width:768px){
+
+.services-section{
+    padding:50px 18px;
+    margin-top: -120px;
+}
+
+.section-header{
+    max-width:100%;
+    margin-bottom:35px;
+}
+
+.section-header h2{
+    top:0;
+    font-size:36px;
+    font-weight:500;
+    line-height:1;
+}
+.section-header h2 br{
+  display: none;
+}
+.section-header h2 span br{
+  display: none;
+}
+.section-header p{
+    max-width:540px;
+    margin:16px auto 0;
+    font-size:22px !important;
+    line-height:1.8;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+     
+}
+
+.service-box{
+
+    width:100%;
+    max-width:66%;
+    position: relative;
+    right: 100px;
+    padding:30px 20px;
+    min-height:auto;
+   
+}
+.service-box.center{
+  position: relative;
+    left: 0px;
+    width:100%;
+    max-width:66%;
+    padding:30px 20px;
+    min-height:auto;
+}
+
+.service-icon{
+    width:65px;
+    height:65px;
+}
+
+.service-box h3{
+    font-size:22px;
+}
+
+.service-box p{
+    font-size:16px;
+}
+
+.btn-read{
+    /* width:100%; */
+    font-size: 8px;
+    font-weight: 70;
+    /* max-width:150px; */
+    padding: 8px 16px;
+}
+
+}
+
+
+  
+
+@media (max-width:600px){
+
+/* ================= MAIN SECTION ================= */
+
+
+
+/* ================= SERVICES ================= */
+
+.services-section{
+    padding:40px 15px;
+}
+
+.section-header h2{
+    font-size:36px;
+}
+
+.section-header p{
+    font-size:19px !important;
+    max-width: 500px;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+.service-box,
+.service-box.center{
+    width:100%;
+    max-width:80%;
+    margin:0;
+    right:0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    left:55px;
+}
+
+.service-box h3{
+    font-size:22px;
+}
+
+.service-box p{
+    font-size:16px;
+}
+}
+@media (max-width:400px){
+
+.services-section{
+    padding:50px 18px;
+    /* margin-top: -200px; */
+}
+
+.section-header{
+    max-width:100%;
+    margin-bottom:35px;
+}
+
+.section-header h2{
+    top:0;
+    font-size:38px !important;
+    font-weight:500;
+    line-height:1;
+}
+.section-header h2 br{
+  display: none;
+}
+.section-header h2 span br{
+  display: none;
+}
+.section-header p{
+    max-width:340px;
+    margin:15px auto 0;
+    font-size:18px !important;
+    line-height:1.8;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+     
+}
+
+.service-box{
+
+    width:100%;
+    max-width:100%;
+    position: relative;
+    left: 0px;
+    /* margin: 0px; */
+    padding:30px 20px;
+    min-height:auto;
+   
+}
+.service-box.center{
+  position: relative;
+    left: 0px;
+    width:100%;
+    max-width:100%;
+    padding:30px 20px;
+    min-height:auto;
+}
+
+.service-icon{
+    width:65px;
+    height:65px;
+}
+
+.service-box h3{
+    font-size:22px;
+}
+
+.service-box p{
+    font-size:16px;
+}
+
+.btn-read{
+    /* width:100%; */
+    font-size: 8px;
+    font-weight: 70;
+    /* max-width:150px; */
+    padding: 8px 16px;
+}
+
+}
+
+
+
+
 
 
 
@@ -4044,9 +2869,10 @@ margin-left: 160px;
   
   .awc-coverage-section {
     width: 100%;
-    padding: 80px 5%;
+    padding: 0px 5%;
     background: #fff;
     font-family: 'Lato', sans-serif;
+    padding-bottom: 40px;
   }
 
   .awc-container {
@@ -4091,67 +2917,42 @@ margin-left: 160px;
     gap: 15px;
     margin-top: 25px;
   }
-  .awc-btn-primary {
-    background: #F08A4A; /* orange button */
-   background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01;
-    border-radius: 8px;
-    color: #222e3e;
-    display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* margin-top: 20px; */
-    padding: 16px 13px;
-    width: 250px;
-    height: 80px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    text-decoration: none;
-  }
-  .awc-btn-primary:hover {     background: #fff;
-    border: 2px solid #222e3e;
-    color: #222e3e;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    outline: none;
-    /* padding: 10px 144px; */
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    border-radius: 8px;
-    /* width: 250px; */
-    color: #222e3e;
-    /* margin-top: 10px; */
-    display: inline-block;}
   
-  .awc-btn-outline {
+ 
+  
+  .awc-btn-primary {
   background: #fff;
     border: 2px solid #222e3e;
     color: #222e3e;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     outline: none;
-    /* padding: 10px 144px; */
+    padding: 10px 14px;
     text-align: center;
-    padding-top: 14px;
+    /* padding-top: 14px; */
     transition: all 0.5s ease-in-out;
     border-radius: 8px;
-    width: 150px;
+    /* width: 250px; */
     color: #222e3e;
     /* margin-top: 10px; */
     /* display: inline-block;  */
     text-decoration: none;
   }
-  .awc-btn-outline:hover {      background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01;
+  .awc-btn-primary:hover {      background: linear-gradient(90deg, #febf01 25%, #fa9a0a); border: 2px solid #fdbc01;
     border-radius: 8px;
     color: #222e3e;
-    display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
+font-size: 20px;
     outline: none;
-    /* margin-top: 20px; */
-    /* padding: 16px 13px; */
-    /* width: 190px; */
+    padding: 10px 14px;
     text-align: center;
+    /* padding-top: 14px; */
+    transition: all 0.5s ease-in-out;
+    border-radius: 8px;
+    /* width: 250px; */
+    color: #222e3e;
+    /* margin-top: 10px; */
+    /* display: inline-block;  */
+    text-decoration: none;
     transition: all 0.5s ease-in-out;}
 
   /* RIGHT IMAGE */
@@ -4568,7 +3369,7 @@ margin-left: 160px;
   }
 
   .genre-container {
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
   }
 
@@ -4591,7 +3392,7 @@ margin-left: 160px;
     font-size: 20px !important; margin-top: 10px;
     padding-left: 0;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4;
      color: #000;
-     line-height: 1.2;
+     line-height: 1.4;
   }
 
   /* BOOK VIDEO WRAPPER */
@@ -4645,8 +3446,9 @@ margin-left: 160px;
     outline: none;
     /* margin-top: 20px; */
     padding: 16px 15px;
-    width: 220px;
+    width: 320px;
     /* height: 80px; */
+    margin-top: 20px;
     text-align: center;
     transition: all 0.5s ease-in-out;
     text-decoration: none;
@@ -4996,7 +3798,7 @@ margin-left: 160px;
     outline: none;
     /* margin-top: 20px; */
     padding: 16px 13px;
-    width: 240px;
+    width: 270px;
     height: 55px;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -6258,10 +5060,11 @@ body > *:last-child{
     <span></span>
 </div>
 
+     
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         
         <li>
             <a href="#">
@@ -6269,15 +5072,15 @@ body > *:last-child{
     <span class="dropdown-arrow">▼</span>
   </a>
           <ul class="dropdown">
-            <a href="#">Book Editing</a>
-            <a href="#">Proofreading</a>
-            <a href="#">Book Layout</a>
-            <a href="#">Book Cover Design</a>
-            <a href="#">Childrens Book Publishing</a>
-            <a href="#">Book Illustration</a>
-            <a href="#">Book Marketing</a>
-            <a href="#">Audiobook Publishing</a>
-            <a href="#">Author Website</a>
+            <a href="editing.html">Book Editing</a>
+            <a href="proofreading.html">Proofreading</a>
+            <a href="layout.html">Book Layout</a>
+            <a href="cover.html">Book Cover Design</a>
+            <a href="publishing.html">Childrens Book Publishing</a>
+            <a href="illustration.html">Book Illustration</a>
+            <a href="marketing.html">Book Marketing</a>
+            <a href="audio.html">Audiobook Publishing</a>
+            <!-- <a href="#">Author Website</a> -->
           </ul>
         </li>
 
@@ -6286,18 +5089,18 @@ body > *:last-child{
     <span>Locations</span>
     <span class="dropdown-arrow">▼</span>
   </a>          <ul class="dropdown">
-            <a href="#">Book Publishing Sydney</a>
-            <a href="#">Book Publishing Brisbane</a>
-           <a href="#">Book Publishing Perth</a>
-            <a href="#">Book Publishing Adelaide</a>
-            <a href="#">Book Publishing Melbourne</a>
+            <a href="lucationS.html">Book Publishing Sydney</a>
+            <a href="B.html">Book Publishing Brisbane</a>
+           <a href="P.html">Book Publishing Perth</a>
+            <a href="A.html">Book Publishing Adelaide</a>
+            <a href="M.html">Book Publishing Melbourne</a>
           </ul>
         </li>
 
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Packages</a></li>
-        <li><a href="#">Free Quote</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="freeQuote.html">Free Quote</a></li>
         <!-- <li><a href="#" class="cta-btn" style="color: #222e3e; font-size: 14px; text-align: center;">BOOK A 30-MINUTE DISCOVERY CALL</a></li> -->
       </ul>
       <a href="#" class="cta-btn openModalBtn" >BOOK A 30-MINUTE DISCOVERY CALL</a>
@@ -6312,13 +5115,10 @@ body > *:last-child{
   <div class="hero-section">
     <!-- LEFT 60% -->
     <div class="left-content">
-      <h1>Grow Your Author <br> Brand with <span>Amazon<br> Book Publishing </span><br> Services in Australia</h1>
-      <p>Self Publishing Australia helps authors to become trusted Amazon publishers and understand the Australian market inside out. We guide every stage, from manuscript setup to launch, using Amazon Kindle Direct Publishing to place your book where readers search most.</p>
-      <p>Our team handles professional formatting, Book Cover Design, and listing details so your title looks polished and credible. As one of the leading self publishing companies Australia relies on, we focus on speed, quality, and author control.</p>
-      <p>In 7 days, you can move from draft to live listing with clear support, simple steps, and no confusion. Publish with confidence and reach readers across Australia and beyond.</p>
-      <p>Every launch stays transparent, practical, and <br> yours.</p>
-      <button class="btn-orange">View Our Author Packages</button><br>
-      <button class="btn-outline openModalBtn">Publish on Amazon with Us</button>
+      <h1>Book Publishers in<span> <br> Adelaide   </span>—  South <br> Australia's Trusted <br> Choice</h1>
+      <p>Adelaide authors deserve a publishing partner who understands the local market. We are book publishers in Adelaide with a simple mission: to help you publish with confidence. From manuscript to global distribution. No agent required.Hybrid, or self-publishing. Your story. Your royalties. Your timeline. Let us make your book a reality. Adelaide book publisher you can trust.</p>
+    <a href="portfolio.html"><button class="btn-orange">View Our Author Packages</button></a>
+      <button class="btn-outline openModalBtn">Contact Us</button>
        <div class="marquee">
     <div class="marquee-content">
       <img src="amazon-kindle-marquee-img.webp" alt="Google Books">
@@ -6387,268 +5187,6 @@ body > *:last-child{
 
 
   
-  
-  <section class="main-section">
-    <br><br><br><br><br><br>
-    <div class="container">
-
-      <!-- 1. TOP HEADING WITH BRACKETS -->
-      <div class="top-heading">
-        <div class="bracket-left"></div>
-        <h2>
-          Publish your dream story on Amazon KDP with 
-          <span>Self Publishing Australia</span> and 
-          turn it into a best seller book.
-        </h2>
-        <div class="bracket-right"></div>
-      </div>
- <div class="feature-img">
-          <img src="self-publishing-company.webp" alt="Author">
-        </div>
-      <!-- 2. WHY CHOOSE SECTION -->
-      <div class="why-choose">
-        <div class="why-choose-content">
-          <h3>Why Choose The Most  Affordable <span>Amazon Publishing</span> Partner?</h3>
-          <p>We aren't just one of the best Amazon publishers; we are the strategic choice for authors across Australia. From Sydney to Melbourne, Brisbane to Perth, and Adelaide, we combine local support with global reach to maximise your book's success.</p>
-      
-           <div class="feature-text">
-          <h4>7-Day Fast Amazon Publishing</h4>
-          <p>Time is money. Our streamlined process delivers affordable Amazon publishing without the industry standard 3-month wait. We offer professional book publishing Australia authors can rely on, ensuring your manuscript hits the digital shelves while the topic is still hot and your audience is ready to buy.</p>
-          
-          <h4 style="margin-top: 20px;">100% Royalties (Author Control)</h4>
-          <p>Keep what you earn. Unlike traditional deals, we offer 100% royalties, ensuring that Amazon book publishing remains profitable for you. We set up your KDP account so the money goes directly to you. No hidden fees, no revenue sharing, just total financial control over your literary work.</p>
-         <h4>Worldwide Amazon Distribution</h4>
-          <p>Go global instantly. With fast Amazon publishing, your book isn't just available in Sydney or Melbourne; it reaches 20+ international marketplaces. Using Kindle Direct Publishing, we ensure your book is available to millions of readers worldwide within days, maximising your sales potential across every time zone.</p>
-          
-          <h4 style="margin-top: 20px;">Professional Formatting & Cover</h4>
-          <p>Books are judged by their cover and readability. We specialize in Amazon KDP publishing standards, ensuring your interior passes the "look inside" test with flawless professional Book Layout. We provide quick Amazon publishing with premium assets, giving your book the competitive edge it needs to stand out against the competition.</p>
-     
-          </div>
-        
-        </div>
-      </div>
-
-      <!-- 3. FEATURE 1: IMAGE LEFT -->
-      <div class="feature">
-       
-        <!-- <div class="feature-text">
-          <h4>7-Day Fast Amazon Publishing</h4>
-          <p>Time is money. Our streamlined process delivers affordable Amazon publishing without the industry standard 3-month wait. We offer professional book publishing Australia authors can rely on, ensuring your manuscript hits the digital shelves while the topic is still hot and your audience is ready to buy.</p>
-          
-          <h4 style="margin-top: 20px;">100% Royalties (Author Control)</h4>
-          <p>Keep what you earn. Unlike traditional deals, we offer 100% royalties, ensuring that Amazon book publishing remains profitable for you. We set up your KDP account so the money goes directly to you. No hidden fees, no revenue sharing, just total financial control over your literary work.</p>
-         <h4>Worldwide Amazon Distribution</h4>
-          <p>Go global instantly. With fast Amazon publishing, your book isn't just available in Sydney or Melbourne; it reaches 20+ international marketplaces. Using Kindle Direct Publishing, we ensure your book is available to millions of readers worldwide within days, maximising your sales potential across every time zone.</p>
-          
-          <h4 style="margin-top: 20px;">Professional Formatting & Cover</h4>
-          <p>Books are judged by their cover and readability. We specialize in Amazon KDP publishing standards, ensuring your interior passes the "look inside" test with flawless professional Book Layout. We provide quick Amazon publishing with premium assets, giving your book the competitive edge it needs to stand out against the competition.</p>
-     
-        
-        
-        </div> -->
-
-
-
-
-
-      </div>
-
-      <!-- 4. FEATURE 2: IMAGE RIGHT -->
-     
-        <!-- <div class="feature-img">
-          <img src="tablet-img.png" alt="My Books Tablet">
-        </div> -->
-        
-     
-
-      <!-- 5. BUTTONS -->
-      <div class="btn-group" >
-        <button style="cursor: pointer;" class="btn-oranges openModalBtn" >Start Your Author Journey</button>
-        <button style="cursor: pointer;" class="btn-outlines">Let's Get Started</button>
-      </div>
-
-    </div>
-    <br><br><br>
-  </section>
-
-
-
-
-
-
-<br><br><br>
-
-
-  <section class="services-section">
-    <div class="container">
-
-      <!-- 1. TOP HEADING -->
-      <div class="section-header">
-        <h2>Trusted KDP <span>Amazon Australia</span><br> Support for Modern Author Nationwide</h2>
-        <p>With Amazon KDP publishing at our core, we empower authors to publish book online on Amazon swiftly. Our end-to-end solutions eliminate technical hurdles, allowing you to focus on storytelling while we handle the rest, from manuscript to marketplace.</p>
-      </div>
-
-      <!-- 2. ALL SERVICE BOXES -->
-      <div class="services-grid">
-        
-        <!-- BOX 1: Book Editing -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download.png" alt="Book Editing"></div>
-          <h3>Book Editing</h3>
-          <p>Clean interiors, spacing, and chapter styling make your manuscript easier to read. Being your professional book publisher, we prepare print and digital files that look professional, load correctly, and protect your book's visual consistency everywhere.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 2: Book Cover Design -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (1).png" alt="Book Cover Design"></div>
-          <h3>Book Cover Design</h3>
-          <p>Strong covers help buyers stop scrolling. We create market-aware book cover design on Amazon that matches genre expectations, strengthens first impressions, and supports better conversion on search results, category pages, and author listings online.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 3: Children's Book Publishing -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (2).png" alt="Children's Book"></div>
-          <h3>Children's Book Publishing</h3>
-          <p>We handle upload preparation, metadata checks, pricing setup, and final submission, so your title is submitted correctly to Amazon. With our Amazon marketing services, reach your audience with confidence, avoid delays and reduce major technical errors early.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 4: Book Layout -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (3).png" alt="Book Layout"></div>
-          <h3>Book Layout</h3>
-          <p>We handle complete book layout formatting for print and digital, ensuring proper structure, clean typography, and a professional look. Avoid formatting issues and deliver a polished reading experience.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 5: Proofreading Services -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (4).png" alt="Proofreading"></div>
-          <h3>Proofreading Services</h3>
-          <p>Final error correction for spelling, grammar, punctuation, and formatting to ensure a clean, professional, and publication-ready manuscript with complete accuracy and consistency.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 6: Book Illustration -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (5).png" alt="Book Illustration"></div>
-          <h3>Book Illustration</h3>
-          <p>Custom illustrations that enhance storytelling, visual appeal, and reader engagement for fiction, children's books, and illustrated publishing projects with creative depth.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 7: Book Marketing -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (6).png" alt="Book Marketing"></div>
-          <h3>Book Marketing</h3>
-          <p>Strategic marketing support to increase visibility, reach target readers, and improve book sales performance through optimized positioning and audience-focused promotion.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 8: Audiobook Publishing -->
-        <div class="service-box">
-          <div class="service-icon"><img src="download (7).png" alt="Audiobook"></div>
-          <h3>Audiobook Publishing</h3>
-          <p>Turn your manuscript into a professional audiobook with narration, editing, sound quality enhancement, and platform-ready formatting for global distribution.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-        <!-- BOX 9: Author Website - CENTER -->
-        <div class="service-box center">
-          <div class="service-icon"><img src="download (8).png" alt="Author Website"></div>
-          <h3>Author Website</h3>
-          <p>Personal author websites designed to showcase your books, build your brand identity, and connect directly with readers through a professional online presence.</p>
-          <a href="#" class="btn-read">Read More →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-  <section class="tsp-testimonials-section">
-    <div class="tsp-container">
-
-      <!-- 1. TOP HEADING -->
-      <div class="tsp-section-header">
-        <h2>Trusted Reviews from <span>Australian</span> Authors</h2>
-        <p>These customer testimonials reflect real author journeys, highlighting trust,<br> results, and experiences from writers across different regions of Australia.</p>
-      </div>
-
-      <!-- 2. ALL TESTIMONIAL CARDS -->
-      <div class="tsp-testimonials-grid">
-        
-        <!-- CARD 1 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Sarah-Mitchell.webp" alt="Sarah Mitchell">
-          </div>
-          <h3 class="tsp-quote-title">Working with this team gave me true confidence.</h3>
-          <p class="tsp-client-info">Sarah Mitchell - Sydney, Romance</p>
-          <p class="tsp-quote-text">My book launch felt organised, and the results showed real published author success beyond my expectations.</p>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="David-Chen.webp" alt="David Chen">
-          </div>
-          <h3 class="tsp-quote-title">I saw consistent growth in my book sales after publishing.</h3>
-          <p class="tsp-client-info">David Chen - Melbourne, Business</p>
-          <p class="tsp-quote-text">The process felt clear, and I always knew what was happening at each stage. Their Book Marketing Service boosted my visibility beyond anything.</p>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Jessica-Lowe.webp" alt="Jessica Lowe">
-          </div>
-          <h3 class="tsp-quote-title">The turnaround was impressive.</h3>
-          <p class="tsp-client-info">Jessica Lowe - Brisbane, Children's Books</p>
-          <p class="tsp-quote-text">I needed fast publishing, and they delivered without compromising quality or missing important details in the final output. Absolutely stress-free experience from start to finish.</p>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Michael-O-Connor.webp" alt="Michael O'Connor">
-          </div>
-          <h3 class="tsp-quote-title">Affordable services made everything accessible.</h3>
-          <p class="tsp-client-info">Michael O'Connor - Perth, Thriller</p>
-          <p class="tsp-quote-text">The support I received made the entire journey much easier than expected. High-quality results without breaking the bank. Highly recommend!</p>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Emma-Thompson.webp" alt="Emma Thompson">
-          </div>
-          <h3 class="tsp-quote-title">The final product looked outstanding.</h3>
-          <p class="tsp-client-info">Emma Thompson - Adelaide, Memoir</p>
-          <p class="tsp-quote-text">From layout to cover, the professional quality gave my book a polished and credible feel in the market. My book looks like it came from a major publishing house.</p>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Jack-Turner.webp" alt="Jack Turner">
-          </div>
-          <h3 class="tsp-quote-title">Great support for authors in Australia.</h3>
-          <p class="tsp-client-info">Jack Turner - Hobart, Fantasy</p>
-          <p class="tsp-quote-text">The team understood local needs and helped me reach a broader audience confidently. This team delivered exactly that, and then some. Truly grateful.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
 
 
@@ -6656,70 +5194,58 @@ body > *:last-child{
 
   <section class="spa-process-section">
           <div class="spa-section-header">
-        <h2>Simple and Clear <span>Amazon Publishing Process</span> for Authors</h2>
-        <p>We guide you from manuscript to marketplace with a seamless Amazon KDP launch, ensuring your <br> book goes live without the usual headaches.</p>
-      </div>
-    <div class="spa-container">
+        <h2><span>Adelaide's   </span> Trusted Independent <br> Publishing Company</h2>
+     <p>Adelaide is one of Australia's great literary cities. Home to Wakefield Press, Hardshell Publishing, and MidnightSun Publishing some of the most respected independent publishers in the country. But for most authors, getting a manuscript through their doors means years of waiting, a literary agent, and no guarantee of a result. We do things differently.</p>
+    <p>We assist writers looking for publishing companies in Adelaide that provide expert advice, flexibility, and openness without needless gatekeeping. We provide several publication channels under one roof, including hybrid, self-publishing, and assisted publishing alternatives, in contrast to many independent book publishers for Adelaide authors.</p>
+    <p>As an experienced Adelaide book publisher, we support both first-time and established authors across every genre, delivering editing, design, production, printing, and worldwide distribution from Adelaide to regional South Australia.</p>
+    <br><a href="freeQuote.html"> <button class="spa-btn">Talk to Our Expert Now!</button> </a>   
+</div>
+    
+          <br><br>
+
+
+  <section class="services-section">
+    <div class="container">
 
       <!-- 1. TOP HEADING -->
+      <div class="section-header">
+        <h2>Our Adelaide <span>Book Publishing</span> Services</h2>
+        <p>Adelaide authors searching for book publishing services near Adelaide need clarity. Book publishing in Adelaide should not feel confusing. We are independent book publishers in Adelaide who offer three clear paths. Choose what fits your book and your goals.</p>
+      </div>
 
-
-      <!-- 2. ALL PROCESS CARDS -->
-      <div class="spa-process-grid">
-       
+      <!-- 2. ALL SERVICE BOXES -->
+      <div class="services-grid">
         
-        <!-- CARD 1 -->
-        <div class="spa-process-card">
-          <div class="spa-process-icon">
-            <img src="submit-manuscript.webp" alt="Submit Manuscript">
-          </div>
-          <h3 class="spa-process-title">Submit Your Manuscript</h3>
-          <p class="spa-process-text">Start with a smooth manuscript submission where you share your draft with our team. We review structure, content readiness, and next steps, helping you prepare properly before you publish on Amazon with clarity and confidence.</p>
+        <!-- BOX 1: Book Editing -->
+        <div class="service-box">
+          <div class="service-icon"><img src="download (13).png" alt="Book Editing"></div>
+          <h3>Hybrid Publishing Adelaide</h3>
+          <p>Hybrid publishing in Adelaide combines author investment with professional quality. You co fund production. In return, you keep full rights and much higher royalties than traditional deals. A professional editorial and design team handles everything. That is hybrid book publisher near Adelaide service. Partnership publishing in Adelaide works for debut and experienced authors alike.</p>
+          
         </div>
 
-        <!-- CARD 2 -->
-        <div class="spa-process-card">
-          <div class="spa-process-icon">
-            <img src="editing-formatting.webp" alt="Refine Book">
-          </div>
-          <h3 class="spa-process-title">Refine Book Structure</h3>
-          <p class="spa-process-text">We organize your content through expert book editing and proofreading so every page reads clearly and looks professional. This stage ensures consistency in layout, spacing, and readability, making your book ready for both digital and print publishing standards.</p>
+        <!-- BOX 2: Book Cover Design -->
+        <div class="service-box">
+          <div class="service-icon"><img src="download (14).png" alt="Book Cover Design"></div>
+          <h3>Self-Publishing & Assisted Publishing Adelaide</h3>
+          <p>Self publishing in Adelaide places you in complete control. You retain 100 percent of rights and all royalties. A trusted partner provides professional help with editing, cover design, layout, and global distribution. Self publish a book in Adelaide with confidence. Book self publishing services near South Australia include print on demand. No inventory. No bulk printing. Just your book, worldwide.</p>
+          
         </div>
 
-        <!-- CARD 3 -->
-        <div class="spa-process-card">
-          <div class="spa-process-icon">
-            <img src="Design Visual Identity.webp" alt="Design">
-          </div>
-          <h3 class="spa-process-title">Design Visual Identity</h3>
-          <p class="spa-process-text">Your cover design is created to match your genre and audience expectations. We focus on clarity, impact, and market relevance so your book stands out immediately while maintaining a professional and credible appearance.</p>
-        </div>
 
-        <!-- CARD 4 -->
-        <div class="spa-process-card">
-          <div class="spa-process-icon">
-            <img src="Prepare Publishing Setup.webp" alt="Publishing Setup">
-          </div>
-          <h3 class="spa-process-title">Prepare Publishing Setup</h3>
-          <p class="spa-process-text">We manage the complete Amazon publishing process, including metadata, categories, and pricing setup. Every detail is aligned carefully so your book meets platform requirements and is positioned correctly for discoverability and reader engagement.</p>
-        </div>
 
-        <!-- CARD 5 - CENTER -->
-        <div class="spa-process-card center">
-          <div class="spa-process-icon">
-            <img src="Launch_Within_Timeline.webp" alt="Launch">
-          </div>
-          <h3 class="spa-process-title">Launch Within Timeline</h3>
-          <p class="spa-process-text">With a proven 7-day turnaround, your book moves from final approval to live listing quickly. We coordinate each step so your release feels smooth, controlled, and ready to reach readers without unnecessary delays.</p>
-        </div>
+
+        
+
+        
+
+       
 
       </div>
+    </div>
+  </section>
 
-      <!-- 3. BUTTONS -->
-      <div class="spa-btn-group">
-        <a href="#" class="spa-btn openModalBtn">Publish on Amazon Today</a>
-        <a href="#" class="spa-btn">See Our Publishing Plans</a>
-      </div>
+
 
     </div>
   </section>
@@ -6729,26 +5255,25 @@ body > *:last-child{
 
       <!-- 1. LEFT: HEADING + TEXT + BUTTONS -->
       <div class="awc-content">
-        <h2>Reliable Australia-Wide Coverage for <span>Amazon<br> Publishing</span> Success</h2>
-        
-        <p>When you choose us, you are not just hiring a service provider, you are partnering with a team that truly understands the local publishing landscape. Our Amazon publishers Australia network ensures that whether you are in a capital city or a regional town, you receive the same dedicated attention and high-quality execution.</p>
+        <h2>Submit Your<span> Manuscript<br> </span> No Literary Agent Required</h2>
 
-        <p>For authors in New South Wales, our Amazon publishing Sydney team delivers fast, personalized support to the busy schedules of city-based writers. Down in Victoria, Amazon publishers Melbourne authors benefit from our deep understanding of the local literary community and market trends. Up in Queensland, Amazon publishing Brisbane clients enjoy responsive communication and seamless project management.</p>
+        <p>No literary agent is required to submit your manuscript to our Adelaide publishing team. We are one of the few book publishers in Adelaide accepting submissions directly from authors. That means no query letters. No formal proposals. No long waits for a reply.</p>
 
-        <p>Out west, Amazon publishing Perth authors receive the same white-glove service despite the distance, proving that location is never a barrier. And in South Australia, Amazon publishing Adelaide writers appreciate our commitment to timely delivery and transparent pricing, all in AUD.</p>
+        <p>We actively accept unsolicited manuscripts. You do not need an agent to knock on our door. Simply put, we are book publishers near Adelaide with no agent required for any author. You can submit manuscript in Adelaide publisher with ease. Visit our online portal. Upload your file. Our team reviews every submission.</p>
 
-        <p>No matter where you are based, from Sydney to Perth, Melbourne to Adelaide, Brisbane to regional Queensland, we deliver consistent, high-quality service. Your location does not affect your timeline, your quality, or your success. With us, every Australian author gets the same exceptional experience.</p>
-
+        <p>Manuscript submission in Adelaide is straightforward. You receive an editorial assessment within two to four weeks. We accept fiction, non-fiction, children's books, local history, memoir, and poetry. All genres welcome. If you are looking for book publishers in Adelaide accepting unsolicited manuscripts, your search ends here. We also help authors understand how to get a book published in Adelaide with clear, step by step guidance.
+<br><br>
+Ready to publish?</p>
         <!-- BUTTONS TEXT KE BAAD -->
         <div class="awc-btn-group">
-          <a href="#" class="awc-btn-primary openModalBtn">Publish from Anywhere in Australia</a>
-          <a href="#" class="awc-btn-outline openModalBtn">Talk to An Expert</a>
+          <a href="#" class="awc-btn-primary openModalBtn">Submit Your Manuscript Today</a>
+         
         </div>
       </div>
 
       <!-- 2. RIGHT: IMAGE - DESKTOP PE RIGHT, MOBILE PE SAB SE LAST -->
       <div class="awc-image">
-        <img src="famous-publishers-worldwide.webp" alt="Amazon Publishing Australia">
+        <img src="Adelaide.webp" alt="Amazon Publishing Australia">
       </div>
 
     </div>
@@ -6762,11 +5287,17 @@ body > *:last-child{
     <div class="genre-container">
 
       <!-- 1. HEADING -->
-      <h2 class="genre-heading">Be it Fiction, Horror or Romance – <span>we <br>publish every genre</span></h2>
+      <h2 class="genre-heading"> <span>Adelaide  Book Publishing </span>for Every Genre</h2>
       
-      <!-- 2. TEXT -->
-      <p class="genre-text">Bring your book to us, irrespective of the genre, and we'll help you launch it, at your desired platform. Some of our commonly published genres are Romance, Horror, Fiction, Non-Fiction and more.</p>
-      <!-- 3. BOOK VIDEO - TUM VIDEO YAHAN LAGAO -->
+      <!-- 2. TEXT --> <br>
+      <p class="genre-text">Every book is different. Every genre has its own readers, its own visual language, and its own market. Our Adelaide publishing team brings editorial and design expertise across every major genre. For young readers, a children's book publisher in Adelaide understands illustrated picture books to middle grade novels.</p>
+       <p class="genre-text">For storytellers, a fiction publisher in South Australia knows immersive narratives and genre conventions. For community stories, local history book publishing in Adelaide serves heritage societies and biography writers.</p>
+        <p class="genre-text">For bold voices, an independent book publisher in Adelaide champions experimental works and short story collections. And for verse, a poetry publisher in Australia preserves lyrical beauty. Whatever you write, we speak your genre.</p>
+         <!-- <p class="genre-text">For ideas that lead, non-fiction book publishers Sydney and business book publishers in Sydney focus on credibility, thought leadership, and corporate reach.</p>
+       <p class="genre-text">For young minds, children's book publishers Sydney handle illustrated picture books to middle grade novels with care.</p>
+       <p class="genre-text">For personal stories, memoir publishers Sydney and poetry publishers Sydney preserve authentic voice while shaping strong literary positioning.</p>
+       <p class="genre-text">And for rigorous research, academic publishers Sydney deliver scholarly standards, proper footnoting, indexing, and university library distribution. Whatever you write, we speak its language.</p>
+      3. BOOK VIDEO - TUM VIDEO YAHAN LAGAO -->
       <div class="genre-book-wrapper">
         <!-- VIDEO TAG USE KARO. Filhal placeholder hai -->
         <video class="genre-book" autoplay muted loop playsinline>
@@ -6776,11 +5307,11 @@ body > *:last-child{
         </video>
 
         <!-- 4. NEECHE ANIMATED LINE -->
-        <div class="genre-line"></div>
+        <!-- <div class="genre-line"></div> -->
       </div>
 
       <!-- 5. BUTTON -->
-      <a href="#" class="genre-btn openModalBtn " >Publish My Book</a>
+      <!-- <a href="#" class="genre-btn openModalBtn " >Publish My Book</a> -->
 
     </div>
   </section>
@@ -6791,19 +5322,22 @@ body > *:last-child{
     <div class="pub-container">
 
       <!-- 1. HEADING 1 -->
-      <h2 class="pub-heading">Join Your <span>Australian Neighbours</span> Who<br>Trusted Us To Publish Their Books</h2>
+      <h2 class="pub-heading">How Much Does <span>Book Publishing</span> Cost <br> in Adelaide?</h2>
       
       <!-- 2. TEXT -->
-      <p class="pub-text">Ready to publish books online on Amazon with the experts? Self Publishing Australia has helped 250+ authors across Sydney, Melbourne, Brisbane, Perth, and Adelaide bring over 30,000+ books to readers worldwide.</p>
+       <p class="pub-text">Transparency is rare in publishing. Major Adelaide publishing house names do not publish pricing online. We do things differently. Real costs depend on your chosen model and services.</p>
+      
 
-      <p class="pub-text">Our Amazon KDP publishing services in Australia cover everything from professional book formatting to Amazon book distribution, ensuring your book reaches global marketplaces with ease. You keep 100% royalties while we handle the technical side. With quick Amazon publishing and a 7-day guarantee, there is no faster or more reliable way to launch.</p>
+      <p class="pub-text">For self publishing, expect professional editing between AUD 1,500 and 5,000. Cover design ranges from AUD 500 to 1,500. Formatting costs AUD 300 to 800. An ISBN registration is AUD 45 to 85. A full self publishing package starts at AUD $2,800. That is affordable for authors on a budget.</p>
 
-      <p class="pub-text">Trust our Kindle Direct Publishing experts who genuinely care about your success. Start your journey today, your readers are waiting.</p>
+      <p class="pub-text">For hybrid publishing, packages range from AUD 4,000 to 12,000. Price varies by manuscript length, genre complexity, and the services you select. Print on demand keeps costs low. No bulk printing required.
+<br><br>
+Want a clear answer for book publishers in Adelaide? Every author receives a custom quote. We serve South Australia book publishers with honest pricing.</p>
 
       <!-- 3. BUTTON -->
       <div class="pub-btn-group">
-        <a href="#" class="pub-btn-primary  openModalBtn">Book Free Consultation</a>
-        <a href="#" class="pub-btn-outline">Get Professional Services</a>
+        <a href="#" class="pub-btn-primary  openModalBtn">Get a Free Publishing Quote</a>
+        
       </div>
 
       <!-- 4. LOGOS -->
@@ -6816,19 +5350,21 @@ body > *:last-child{
       </div>
 
       <!-- 5. HEADING 2 -->
-      <h2 class="pub-heading">We Help <span>Australian Authors</span> Publish on<br>Global Platforms</h2>
+      <h2 class="pub-heading">Why Choose Our<span> Adelaide </span>  Book  Publisher?</h2>
 
       <!-- 6. TEXT -->
-      <p class="pub-text">We don’t just offer self-publishing services for Amazon — we go far beyond that. Our team helps authors expand their reach by distributing their books across 50+ global platforms, ensuring your work is accessible to readers worldwide. From major online bookstores to international digital libraries, we make sure your book gets the visibility it deserves.</p>
+      <p class="pub-text">We are a book publishing company in Adelaide with genuine local expertise. That makes us one of the best book publishers in Adelaide for authors who want transparency and results. We are local book publishers in Adelaide who understand the South Australian market.</p>
 
-      <p class="pub-text">With our global distribution network, your book is not limited to a single marketplace. We help you connect with a broader audience, increase your sales potential, and build a strong international presence as an author.</p>
+      <p class="pub-text">Four trust signals set us apart. First, an Adelaide based team with deep knowledge of the Australian book market. Second, genre specialist editors matched to your manuscript. Third, no literary agent required for any publishing model. Fourth, global distribution included in all packages.</p>
 
-      <p class="pub-text">Whether you're a first-time writer or an experienced author, we provide the tools and support needed to publish and succeed on a global scale.</p>
+      <p class="pub-text">We name specific outcomes. Our Adelaide published titles have been stocked in Booktopia, distributed through IngramSpark to over 40,000 retailers, and shortlisted for Australian literary awards. We also work with Dymocks Adelaide and the State Library of South Australia. That is the difference between Adelaide book publishers who talk and those who deliver.
+<br><br>
+Whether you choose us or compare Wakefield Press vs self publishing, we are confident in our value.</p>
 
       <!-- 7. BUTTON -->
-      <div class="pub-btn-group">
-        <a href="#" class="pub-btn-primary  openModalBtn">Book Free Consultation</a>
-        <a href="#" class="pub-btn-outline">Get Professional Services</a>
+      <!-- <div class="pub-btn-group"> -->
+      
+
       </div>
 
     </div>
@@ -6839,7 +5375,7 @@ body > *:last-child{
 
       <!-- LEFT SIDE -->
       <div class="hush-left">
-        <h2>Hush Away Your Doubts</h2>
+        <h2>Frequently Asked Questions</h2>
         
         <div class="accordion">
           <div class="accordion-item">
@@ -6936,7 +5472,25 @@ body > *:last-child{
     </div>
   </section>
 
+  <section class="genre-section">
+    <div class="genre-container">
 
+      <!-- 1. HEADING -->
+      <h2 class="genre-heading">Ready to<span>  Publish Your Book</span> Adelaide?</h2>
+      
+      <!-- 2. TEXT --> <br>
+      <p class="genre-text">You have the manuscript. We have the plan. No agent. No waiting. No confusion.
+<br><br>
+Choose your publishing model.Hybrid, or self publishing. All available through one trusted Adelaide publishing house. Simply decide to publish my book in Adelaide and take the first step.</p>
+       <p class="genre-text">Submit manuscript Adelaide publisher today. Upload online. Receive an editorial assessment within weeks. Or book a free publishing consultation. Get a custom quote. All genres welcome. Debut authors encouraged.</p>
+     <!-- 3. BOOK VIDEO - TUM VIDEO YAHAN LAGAO -->
+<br>
+
+      <!-- 5. BUTTON -->
+      <a href="#" class="genre-btn openModalBtn " >Submit Your Manuscript Today</a>
+
+    </div>
+  </section>
 
 
   <footer class="site-footer">
