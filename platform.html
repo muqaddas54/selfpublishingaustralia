@@ -1456,697 +1456,385 @@ body{
     overflow-x:hidden;
 }
 
-.hero-section {
-  background: linear-gradient(135deg, #fa9a0a, #f5b400);
-  padding: 40px 20px;
-  margin-top: 20px;
+.custompkg-section {
+  background: #f7f8fa;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
 }
 
-.hero-container {
-  max-width: 1300px;
+.custompkg-container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
+}
+
+.custompkg-banner {
+  background: linear-gradient(135deg, #ffb703, #fa9a0a);
+  padding: 60px 0;
+  color: #fff;
+}
+
+.custompkg-banner h1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 0 12px 0;
+}
+
+.custompkg-breadcrumb {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.custompkg-main {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  align-items: flex-start;
+}
+
+.custompkg-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.custompkg-sidebar{
+    position:relative;
+}
+
+.custompkg-sidebar-inner{
+    background:#fff;
+    border-radius:8px;
+    padding:25px;
+    box-shadow:0 1px 4px rgba(0,0,0,.06);
+
+    position:absolute;
+    top:0;
+    /* left:0; */
+    width:320px;
+}
+.custompkg-main{
+    display:flex;
+    align-items:flex-start;
+}
+
+.custompkg-sidebar{
+    width:320px;
+    position:relative;
+    min-height:100%;
+}
+
+.custompkg-sidebar h3 {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4a5568;
+  margin: 0 0 20px 0;
+}
+
+.custompkg-sidebar ul { list-style: none; padding: 0; margin: 0; }
+.custompkg-sidebar li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  gap: 10px;
+  padding: 10px 0;
 }
+.custompkg-sidebar li a {
+  color: #5b0cee;
+  text-decoration: underline;
+  font-size: 17px;
+}
+/* .custompkg-sidebar li.active a { color: #e85c2d; font-weight: 600; } */
+.custompkg-sidebar li img { width: 18px; height: 18px; }
 
-.hero-content {
+.custompkg-content {
   flex: 1;
-  color: #fff;
-}
-
-.hero-content h1 {
-  font-size: 49px;
-  font-weight: 500;
-        font-family: 'Times New Roman', Times, serif;
-
-  line-height: 1.1;
-  margin-bottom: 20px;
-  color: #202020;
-}
-
-.hero-content p {
-  font-size: 15px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  position: relative;
+  color: #4a5568;
   line-height: 1.7;
-  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.custompkg-price-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #1e2f4f;
   color: #fff;
-  max-width: 550px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* padding: 18px 18px; */
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
 }
+.custompkg-price-box br{
+    display: none;
+}
+.custompkg-price-box p { margin: 10px 0 8px 0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.custompkg-price-box .old-price { color: #f5b400; text-decoration: line-through; margin-right: 5px; }
+.custompkg-price-box .new-price { color: #f5b400; font-weight: 700; font-size: 18px; }
+.custompkg-price-box small { font-size: 12px; margin: 0 0 12px 0; }
 
-.hero-buttons {
+.custompkg-title {
   display: flex;
-  gap: 15px;
-
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
+.custompkg-title img { width: 24px; }
+.custompkg-title h2 { font-size: 34px; color: #252628; margin: 0; margin-left: -20px; 
+font-family: 'Times New Roman', Times, serif;
+margin-top: 20px;
+ }
+ .custompkg-content p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+ }
 
-.btn {
-  padding: 14px 28px;
+.custompkg-btn {
+  background: linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 12px 26px;
   border-radius: 6px;
   text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-  font-weight: 500;
-  font-size: 15px;
-  transition: all 0.3s ease;
   display: inline-block;
+  margin: 20px 0;
+  font-weight: 500;
+  border: none;
 }
 
-.btn-white {
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid #fff;
+.custompkg-heading {
+  background:linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 25px 0;
+  font-weight: 600;
 }
 
-.btn-white:hover {
-  background: #ebeaea;
-  /* color: #ffffff; */
-  border: 1px solid #ffffff;
+.custompkg-cat {
+  background: #e0f2f1;
+  color: #151515;
+  padding: 10px 15px;
+  margin: 15px 0 0 0;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.hero-image {
-  flex: 1;
+.custompkg-row {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
 }
+.custompkg-row.alt { background: #fafafa; }
+.custompkg-row .tick { color: #4caf50; font-weight: bold; font-size: 18px; }
+.custompkg-row img.logo { height: 28px; width: auto; }
 
-.hero-image img {
-  max-width: 450px;
-  width: 100%;
-  height: auto;
-  display: block;
+.custompkg-price-bar {
+  background:linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
 }
+.custompkg-price-bar s { opacity: 0.8; margin: 0 5px; }
 
-
-
-
-
-/* ==========================================
-        HERO RESPONSIVE
-========================================== */
-
-/* ---------- 991px ---------- */
-/* Same layout as desktop */
-@media (max-width:991px){
-
-.hero-section{
-    padding:60px 25px;
+.custompkg-list { list-style: none; padding: 0; }
+.custompkg-list li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: flex-start;
 }
+.custompkg-list .tick { color: #f47a3c; font-weight: bold; margin-top: 2px; }
+.custompkg-list a { color: #4a90e2; }
+ .custompkg-content p {
+  font-size: 17px; color: rgb(138, 136, 136);
+ }
 
-.hero-container{
-    max-width:1200px;
-    gap:40px;
-}
 
-.hero-content h1{
-    font-size:45px;
-}
 
-.hero-content p{
-    font-size:15px;
-}
+/* =====================================
+   CUSTOM PACKAGE RESPONSIVE
+===================================== */
 
-.hero-image img{
-    max-width:420px;
-}
-
-}
-
-/* ---------- 768px ---------- */
 @media (max-width:768px){
 
-.hero-section{
-    padding:70px 20px;
-    margin-top: 80px;
+.custompkg-main{
+    display:block;
+    padding-top:25px;
 }
 
-.hero-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.custompkg-container{
+    padding:0 20px;
 }
 
-.hero-image{
-    display:none;
-}
-
-.hero-content{
+/* Sidebar card */
+.custompkg-sidebar{
     width:100%;
-    text-align:center;
+    margin-bottom:25px;
 }
 
-.hero-content h1{
-    font-size:40px;
-      font-family: 'Times New Roman', Times, serif;
-    line-height:1.2;
+.custompkg-sidebar-inner{
+    position:relative !important;
+    top:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+    width:100%;
 }
 
-.hero-content h1 br{
-    display:none;
+/* Content */
+
+.custompkg-content{
+    width:100%;
+    padding:25px 20px;
 }
 
-.hero-content p{
-    max-width:650px;
-    margin:20px auto 30px;
+/* Price box */
+
+.custompkg-price-box{
+    position:relative;
+    top:0;
+    right:0;
+    width:100%;
+    margin-bottom:25px;
+}
+
+/* Heading */
+
+.custompkg-title{
+    flex-wrap:wrap;
+}
+
+.custompkg-title h2{
+    font-size:24px;
+}
+
+.custompkg-banner h1{
+    font-size:32px;
+}
+
+.custompkg-row{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.custompkg-row span:first-child{
+    width: auto;
+}
+
+.custompkg-row .tick,
+.custompkg-row img.logo{
+    justify-self: end;
+    margin-top: 0;
+}
+
+}
+
+@media (max-width:600px){
+
+.custompkg-container{
+    padding:0 15px;
+}
+
+.custompkg-banner{
+    padding:55px 0;
+}
+
+.custompkg-banner h1{
+    font-size:29px;
+}
+
+.custompkg-breadcrumb{
+    font-size:14px;
+}
+.custompkg-main {
+  margin-top: 20px;
+}
+.custompkg-content{
+ 
+    padding:20px 15px;
+}
+
+.custompkg-price-box{
+  
+    padding:16px;
+}
+.custompkg-list li{
+  color: black;
+}
+
+.custompkg-heading{
     font-size:17px;
 }
 
-.hero-buttons{
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
+.custompkg-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+}
+.custompkg-title img {display: none; }
+.custompkg-title h2 { font-size: 34px; color: #252628; margin: 0; margin-left: 0px; 
+font-family: 'Times New Roman', Times, serif;
+margin-top: 0px;
+line-height: 1.2;
+ }
+ .custompkg-content p {
+  font-size: 17px; color: rgb(34, 33, 33);
+ }
+ .custompkg-content br{
+  display: none;
+ }
+.custompkg-title h2 br{
+  display: none;
+}
+.custompkg-row{
+  
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
 }
 
-.btn{
-    min-width:250px;
+.custompkg-row span:first-child{
+    width: auto;
 }
 
+.custompkg-row .tick,
+.custompkg-row img.logo{
+    justify-self: end;
+    margin-top: 0;
 }
 
-/* ---------- 600px & Below ---------- */
-@media (max-width:600px){
-
-.hero-section{
-    padding:60px 15px;
-    margin-top: 90px;
-}
-
-.hero-container{
-    display:block;
-}
-
-.hero-image{
-    display:none;
-}
-
-.hero-content{
+.custompkg-btn{
+    width:100%;
     text-align:center;
 }
 
-.hero-content h1{
-  font-family: 'Times New Roman', Times, serif;
-    font-size:30px;
-    line-height:1.3;
-}
-
-.hero-content h1 br{
-    display:none;
-}
-
-.hero-content p{
-    font-size:15px;
-    line-height:1.8;
-    margin:18px auto 28px;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
-
-.btn{
-    width:100%;
-    max-width:260px;
-    padding:14px 20px;
-    font-size:15px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .tsp-testimonials-section {
-    position: relative;
-    width: 100%;
-  
-    min-height: 100vh;
-    padding: 60px 5%; /* 20px ki jagah % ki taake screen se bahar na jaye */
-    background-image: url('bg-top.webp') ; /* YAHAN 1 HI IMG LAGAY GI */
-    background-repeat: no-repeat;
-  background-size: 100% 100%;    /* background-position: center; */
-    /* background: #FDF6F8; */ /* Purani wali hata do */
-    font-family: 'Lato', sans-serif;
-  }
-
-  .tsp-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* TOP HEADING */
-  .tsp-section-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .tsp-section-header h2 {
-       color: #222e3e !important;
-    font-size: 50px !important;
-    font-family: 'Playfair Display', serif;
-    /* font-size: 28px; */
-    /* color: #4A5A6A; */
-    line-height: 1.2;
-   position:relative;
-   /* top: -80px; */
-    font-weight: 500;
-  }
-  .tsp-section-header h2 span { color: #f5b400; } /* orange "Australian" */
-  .tsp-section-header p {
-   font-size: 16.5px !important; margin-top: 10px;
-    padding-left: 0;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.4;
-     color: #000;
-     line-height: 1.2;
-  
-  }
-
-  /* GRID FOR CARDS - 2 COLUMN */
-  .tsp-testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-  }
-
-  /* SINGLE CARD - BORDER + HEIGHT PIC KE HISAB SE */
-  .tsp-testimonial-card {
-    /* margin-top: -20px; */
-    border: 2px solid #fa9a0a; /* orange border */
-    border-radius: 20px; /* round corner */
-    background: #fa9a0a13; /* light pink bg inside card */
-    padding: 35px 30px;
-    text-align: center;
-    min-height: 320px; /* sab card ki height barabar */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    transition: all 0.3s ease;
-  }
-  /* .tsp-testimonial-card:hover {
-    box-shadow: 0 8px 20px rgba(240, 138, 74, 0.15);
-    transform: translateY(-3px);
-  } */
-
-  /* CIRCLE IMAGE */
-  .tsp-client-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-  
-    margin-bottom: 20px;
-    border: 2px solid #fa9a0a; /* orange ring */
-  }
-  .tsp-client-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* CARD CONTENT */
-  .tsp-quote-title {
-    font-family: 'Playfair Display', serif;
-    font-size: large;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
-  
-  .tsp-client-info {
-    font-size: medium;
-    color: #fa9a0a; /* orange name */
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-
-  .tsp-quote-text {
-    font-size: small;
-    color: #1f1f1f;
-    line-height: 1.7;
-    flex-grow: 1; /* taake sab card barabar rahen */
-  }
-
-  /* MOBILE RESPONSIVE */
-/* ==========================================
-   LARGE DESKTOP (1400px+)
-========================================== */
-/* @media (min-width:1400px){
-
-.tsp-container{
-    max-width:1400px;
-}
-
-.tsp-section-header{
-    max-width:900px;
-    margin:0 auto 70px;
-}
-
-.tsp-section-header h2{
-    font-size:48px !important;
-    line-height:1.2;
-}
-
-.tsp-section-header p{
-    font-size:20px !important;
-    line-height:1.7;
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.tsp-testimonial-card{
-    min-height:340px;
-    padding:35px 25px;
-}
-
-.tsp-client-img{
-    width:90px;
-    height:90px;
-}
-
-.tsp-quote-title{
-    font-size:21px;
-}
-
-.tsp-client-info{
-    font-size:16px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.7;
-}
-
-} */
-
-
-/* ==========================================
-   LAPTOP
-========================================== */
-/* @media (max-width:1200px){
-
-.tsp-container{
-    max-width:1100px;
-}
-
-.tsp-section-header{
-    max-width:760px;
-    margin:0 auto 60px;
-}
-
-.tsp-section-header h2{
-    font-size:40px !important;
-}
-
-.tsp-section-header p{
-    font-size:18px !important;
-}
-
-.tsp-testimonials-grid{
-    gap:25px;
-}
-
-.tsp-testimonial-card{
-    padding:35px 25px;
-}
-
-} */
-
-
-/* ==========================================
-   TABLET
-========================================== */
-@media (max-width:992px){
-
-.tsp-testimonials-section{
-    padding:70px 30px;
-}
-
-.tsp-container{
-    max-width:700px;
-}
-
-.tsp-section-header{
-    width:100%;
-    max-width:700px;
-    margin:0 auto 50px;
-}
-
-.tsp-section-header h2{
-    font-size:44px !important;
-}
-
-.tsp-section-header p{
-    font-size:17px !important;
-    line-height:1.2;
-    
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-}
-
-.tsp-testimonial-card{
-   max-width:600px;
-    min-height:300px;
-    padding:30px 22px;
-}
-
-.tsp-client-img{
-    width:80px;
-    height:80px;
-}
-
-.tsp-quote-title{
-    font-size:19px;
-}
-
-.tsp-client-info{
-    font-size:16px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.7;
-}
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-@media (max-width:768px){
-
-.tsp-testimonials-section{
-    padding:55px 18px;
-}
-
-.tsp-container{
-    max-width:90%;
-}
-
-.tsp-section-header{
-    width:100%;
-    margin-bottom:40px;
-}
-
-.tsp-section-header h2{
-    font-size:44px !important;
-    line-height:1;
-}
-.tsp-section-header h2 br{
-  display: none;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-    line-height:1.7;
-    
-}
-
-.tsp-section-header p br{
-    display:none;
-}
-
-/* ONLY MOBILE = ONE CARD */
-
-.tsp-testimonials-grid{
-    grid-template-columns:2,fr;
-    gap:22px;
-      
-     /* max-width:80%; */
-}
-
-.tsp-testimonial-card{
-
-    min-height:auto;
-    margin-top:0;
-    padding:50px 22px;
-}
-
-.tsp-client-img{
-    width:75px;
-    height:75px;
-}
-
-.tsp-quote-title{
-    font-size:20px;
-}
-
-.tsp-client-info{
-    font-size:15px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
+.custompkg-price-bar{
+    text-align:center;
     line-height:1.8;
 }
 
 }
 
-@media (max-width:600px){
 
 
 
-
-
-
-.tsp-testimonials-section{
-    padding:40px 15px;
-}
-
-.tsp-section-header h2{
-    font-size:45px !important;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-}
-
-.tsp-testimonials-grid{
-    grid-template-columns:1fr;
-}
-
-.tsp-testimonial-card{
-    width:60%;
-    padding:25px 18px;
-    margin-left: 100px;
-}
-
-.tsp-client-img{
-    width:70px;
-    height:70px;
-}
-
-.tsp-quote-title{
-    font-size:18px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-}
-
-}
-
-
-
-@media (max-width:400px){
-
-.tsp-testimonials-section{
-    padding:55px 18px;
-}
-
-.tsp-container{
-    max-width:90%;
-}
-
-.tsp-section-header{
-    width:100%;
-    margin-bottom:40px;
-}
-
-.tsp-section-header h2{
-    font-size:38px !important;
-    line-height:1;
-}
-.tsp-section-header h2 br{
-  display: none;
-}
-
-.tsp-section-header p{
-    font-size:19px !important;
-    line-height:1.7;
-    
-}
-
-.tsp-section-header p br{
-    display:none;
-}
-
-/* ONLY MOBILE = ONE CARD */
-
-.tsp-testimonials-grid{
-    grid-template-columns:1fr;
-    gap:22px;
-}
-
-.tsp-testimonial-card{
-  
-    width:100%;
-    max-width:90%;
-    position: relative;
-    margin-left: 0px;
-    left: 15px;
-    /* margin: 0px; */
-    padding:30px 20px;
-    min-height:auto;
-}
-
-.tsp-client-img{
-    width:75px;
-    height:75px;
-}
-
-.tsp-quote-title{
-    font-size:20px;
-}
-
-.tsp-client-info{
-    font-size:15px;
-}
-
-.tsp-quote-text{
-    font-size:15px;
-    line-height:1.8;
-}
-
-}
 
  @media (max-width:480px){
 
@@ -2183,7 +1871,6 @@ body{
 }
 
 }
-
 
     </style>
 </head>
@@ -2251,98 +1938,150 @@ body{
 
 
 
-<section class="hero-section">
-  <div class="hero-container">
+
+
+
+
+
+
+
+
+<section class="custompkg-section">
+
+  <!-- Top Banner -->
+  <div class="custompkg-banner">
+    <div class="custompkg-container">
+      <h1>Multi Platform Package</h1>
+      <div class="custompkg-breadcrumb">Home / Packages / Multi Platform Package</div>
+    </div>
+  </div>
+
+  <div class="custompkg-container custompkg-main">
     
-    <div class="hero-content">
-      <h1>Trusted by Australian Authors<br>From Manuscript to Published Book</h1>
-      <p>Every book we publish represents an author's dream brought to life. From editing and cover design to printing, self-publishing, and global distribution, we're proud to help Australian writers publish with confidence.</p>
-      <div class="hero-buttons">
-        <a href="packages.html" class="btn btn-white">Start Publishing Today</a>
-        <a href="#" class="btn btn-white openModalBtn">Speak with a Publishing Expert</a>
+    <!-- Left Sidebar -->
+    <aside class="custompkg-sidebar">
+      <div class="custompkg-sidebar-inner">
+        <h3>Packages</h3>
+        <ul>
+          <li>
+            <img src="download (9).png" alt="">
+            <a href="rescue.html">Manuscript Rescue</a>
+          </li>
+          <li class="active">
+            <img src="download (10).png" alt="">
+            <a href="packages.html">The Custom Package</a>
+          </li>
+          <li>
+            <img src="download (11).png" alt="">
+            <a href="platform.html">Multi Platform Package</a>
+          </li>
+          <li>
+            <img src="download (12).png" alt="">
+            <a href="global.html">Global Distribution Package</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </aside>
 
-    <div class="hero-image">
-      <img src="Testiminials-hero-image.webp" alt="The Siege of Durham Keep Book">
-    </div>
+    <!-- Right Content -->
+    <div class="custompkg-content">
+      
+      <!-- Price Box -->
+      <div class="custompkg-price-box">
+        <p>Investment</p>
+        <p><span class="old-price">From 5749 AUD</span> <span class="new-price">4599 AUD</span></p>
+        <small>(20% OFF)</small>
+      </div>
 
+      <!-- Title -->
+      <div class="custompkg-title">
+        <img src="download (10).png" alt="" style="margin-right: 10px; margin-top: 20px;" >
+        <h2>Multi Platform Package</h2>
+      </div>
+<br><br>
+      <p>For serious authors who need a complete publishing solution, including marketing support and worldwide distribution reach.
+
+</p>
+
+      <p>The Multi Platform package bridges the gap between basic publishing and full-service author management. It includes everything from The Custom Package, plus enhanced marketing features and expanded distribution.
+
+</p>
+
+      <p>We don't just publish your book; we help readers find it. Our team optimizes your Amazon product page with SEO-rich descriptions, backend keywords, and category targeting. You also receive a starter advertising campaign setup to generate initial traction.
+
+</p>
+
+      <p>For authors who view publishing as a business, The Multi Platform provides the tools to compete effectively. We analyze your genre's competitive landscape, price your book strategically in AUD and other currencies, and ensure your listing converts browsers into buyers. This is publishing with purpose.
+
+</p>
+
+      <a href="#" class="custompkg-btn openModalBtn" >Order Now</a>
+
+      <!-- What's Included -->
+      <h3 class="custompkg-heading">What's Included?</h3>
+
+      <div class="custompkg-table">
+
+        <h4 class="custompkg-cat">Discovery & Publishing Planning</h4>
+        <div class="custompkg-row"><span>Discovery Call (10 Minutes)</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Discovery Call (10 Minutes)</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Custom Typography Selection</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Genre-Specific Layout Optimization</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Global Distribution</h4>
+        <div class="custompkg-row"><span>Publishing on Amazon KDP</span><img src="amazon-kindle-marquee-img.webp" class="logo"></div>
+        <div class="custompkg-row alt"><span>Publishing on IngramSpark</span><img src="IngramSpark-marquee-img.webp" class="logo"></div>
+        <div class="custompkg-row"><span>Publishing on Draft2Digital</span><img src="draft-and-digital.webp" class="logo"></div>
+        <div class="custompkg-row alt"><span>Publishing on Booktopia</span><img src="Booktopia-logo.webp" class="logo"></div>
+
+        <h4 class="custompkg-cat">Editorial Services</h4>
+        <div class="custompkg-row"><span>Editing</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Proofreading</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Publishing Essentials</h4>
+        <div class="custompkg-row"><span>ISBNs, Barcode & Legal Deposit</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>eBook & Print-on-Demand Formatting and Upload</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>eBook, Paperback & Hardcover Editions</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Marketing & Launch Support</h4>
+        <div class="custompkg-row alt"><span>Amazon Product Page SEO</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Backend Keyword Optimization</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Expanded Category Selection</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Competitive Pricing Analysis</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>7-Day Ad Campaign Setup</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Exclusive Benefits</h4>
+        <div class="custompkg-row alt"><span>10% Audiobook Discount on Audiobook Services</span><span class="tick">✓</span></div>
+         <div class="custompkg-row alt"><span>30-Day Post-Launch Support</span><span class="tick">✓</span></div>
+
+          <div class="custompkg-row alt"><span>Everything Included in “The Custom Package”</span><span class="tick">✓</span></div>
+
+
+      </div>
+
+      <!-- Price Bar -->
+      <div class="custompkg-price-bar">
+        From <s>5749 AUD</s> <b>4599 AUD</b> (20% OFF)
+      </div>
+      <a href="#" class="custompkg-btn openModalBtn">Lets Do This</a>
+
+      <!-- Pricing and Inclusions -->
+      <h3>Pricing and Inclusions</h3>
+      <ul class="custompkg-list">
+        <li><span class="tick">✓</span> All pricing is quoted in AUD and may be subject to GST, depending on the final service arrangement and invoice structure. The exact amount shown in a package should clearly state whether GST is included or added at checkout.</li>
+        <li><span class="tick">✓</span> Each package should also specify what the book will receive, including formatting, cover design, Amazon upload support, metadata setup, file checks, and revisions where applicable.</li>
+        <li><span class="tick">✓</span> Extra services like editing depth, premium cover concepts, marketing campaigns, or extended revisions should be listed separately if they are not included in the package price. That keeps the pricing clear, fair, and easy to compare for Australian authors.</li>
+        <li><span class="tick">✓</span> At Self Publishing Australia, we collaborate with highly experienced professionals who bring deep industry knowledge to every project. Our team members have worked with or alongside some of the world's most respected publishing houses, ensuring your book is handled with the highest level of expertise.</li>
+      </ul>
+
+    </div>
   </div>
 </section>
 
 
 
-<section class="tsp-testimonials-section">
-    <div class="tsp-container">
+  
 
-      
-
-      <!-- 2. ALL TESTIMONIAL CARDS -->
-      <div class="tsp-testimonials-grid">
-        
-        <!-- CARD 1 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Sarah-Mitchell.webp" alt="Sarah Mitchell">
-          </div>
-          <h3 class="tsp-quote-title">Publishing my first novel was easier than I imagined.</h3>
-          <p class="tsp-client-info">Sarah Mitchell - Sydney, Romance</p>
-          <p class="tsp-quote-text">The editing, cover design, and publishing support exceeded my expectations. I finally achieved my dream of becoming a published author.</p>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="David-Chen.webp" alt="David Chen">
-          </div>
-          <h3 class="tsp-quote-title">A professional publishing team from beginning to end.</h3>
-          <p class="tsp-client-info">David Chen - Melbourne, Business</p>
-          <p class="tsp-quote-text">They guided me through every stage of self-publishing and helped launch my business book with confidence across multiple platforms.</p>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Jessica-Lowe.webp" alt="Jessica Lowe">
-          </div>
-          <h3 class="tsp-quote-title">My children's book turned out beautifully.</h3>
-          <p class="tsp-client-info">Jessica Lowe - Brisbane, Children's Books</p>
-          <p class="tsp-quote-text">From colourful illustrations to flawless formatting, every detail was handled professionally. Parents and young readers love the final result.</p>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Michael-O-Connor.webp" alt="Michael O'Connor">
-          </div>
-          <h3 class="tsp-quote-title">Excellent quality without an overwhelming price.</h3>
-          <p class="tsp-client-info">Michael O'Connor - Perth, Thriller</p>
-          <p class="tsp-quote-text">The publishing packages were transparent and affordable. My thriller now looks every bit as professional as books from major publishers.</p>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Emma-Thompson.webp" alt="Emma Thompson">
-          </div>
-          <h3 class="tsp-quote-title">They transformed my memoir into something special.</h3>
-          <p class="tsp-client-info">Emma Thompson - Adelaide, Memoir</p>
-          <p class="tsp-quote-text">The editing, interior layout, and premium cover design gave my life story the professional presentation it truly deserved.</p>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="tsp-testimonial-card">
-          <div class="tsp-client-img">
-            <img src="Jack-Turner.webp" alt="Jack Turner">
-          </div>
-          <h3 class="tsp-quote-title">Great support for authors in Australia.</h3>
-          <p class="tsp-client-info">Jack Turner - Hobart, Fantasy</p>
-          <p class="tsp-quote-text">The team understood local needs and helped me reach a broader audience confidently. This team delivered exactly that, and then some. Truly grateful.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
 
 
@@ -2687,6 +2426,59 @@ window.addEventListener("scroll", () => {
     modal.classList.remove("active");
     document.body.classList.remove("modal-open");
 });
+
+
+
+const sidebar = document.querySelector(".custompkg-sidebar-inner");
+const parent = document.querySelector(".custompkg-sidebar");
+const content = document.querySelector(".custompkg-content");
+
+function sidebarScroll(){
+
+    const start = parent.offsetTop - 130;
+
+    const end =
+        content.offsetTop +
+        content.offsetHeight -
+        sidebar.offsetHeight -
+        120;
+
+    if(window.scrollY < start){
+
+        sidebar.style.position="absolute";
+        sidebar.style.top="0";
+        sidebar.style.bottom="auto";
+
+    }
+
+    else if(window.scrollY >= start && window.scrollY <= end){
+
+        sidebar.style.position="fixed";
+        sidebar.style.top="180px";
+        sidebar.style.bottom="auto";
+
+    }
+
+    else{
+
+        sidebar.style.position="absolute";
+        sidebar.style.top=(end-start)+"px";
+        sidebar.style.bottom="auto";
+
+    }
+
+}
+
+window.addEventListener("scroll",sidebarScroll);
+window.addEventListener("resize",sidebarScroll);
+sidebarScroll();
+
+
+
+
+
+
+
 
 </script>
 
