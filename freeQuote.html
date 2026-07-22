@@ -511,6 +511,19 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
     align-items:center;
     font-size:15px;
 }
+.nav-menu > li > a{
+
+    padding:10px 0;
+    margin:0;
+  
+    position: relative;
+    top: -20px;
+}
+.nav-menu ul a {
+  text-align: center;
+  position: relative;
+  left: -10px;
+}
 
 .dropdown{
     position:static;
@@ -577,7 +590,19 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
     text-align:center;
   
 }
+.nav-menu > li > a{
 
+    padding:10px 0;
+    margin:0;
+  
+    position: relative;
+    top: -20px;
+}
+.nav-menu ul a {
+  text-align: center;
+  position: relative;
+  left: -10px;
+}
 .dropdown{
     text-align:center;
     padding-left:0;
@@ -661,14 +686,36 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
 .nav-menu > li > a{
     padding:14px 0;
     margin:0;
-}}
+}
+.nav-menu > li > a{
+
+    padding:10px 0;
+    margin:0;
+  
+    position: relative;
+    top: -20px;
+}
+.nav-menu ul a {
+  text-align: center;
+  position: relative;
+  left: -10px;
+}
+}
 
 
 
-@media (max-width: 400px){
+@media (max-width: 480px){
 
   .hamburger{
+     margin-top: 25px;
     display: block;
+  }
+  .logo img {
+    height: 50px;
+    margin-bottom: -10px;
+    width: 160px;
+    margin-left: 0px;
+
   }
 
  .nav-menu{
@@ -676,7 +723,7 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
     top: 102px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 102px);
+    height: calc(99vh - 102px);
 
     background: #222e3e;
 
@@ -702,8 +749,17 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
 }
 
 .nav-menu > li > a{
-    padding:14px 0;
+
+    padding:10px 0;
     margin:0;
+  
+    position: relative;
+    top: -20px;
+}
+.nav-menu ul a {
+  text-align: center;
+  position: relative;
+  left: -10px;
 }
 .dropdown{
     text-align:center;
@@ -1399,7 +1455,41 @@ body{
     width:100%;
     overflow-x:hidden;
 }
+ @media (max-width:480px){
 
+.site-footer{
+    padding:45px 20px 0;
+}
+
+.footer-logo img{
+   width: 90%;
+    height:100px;
+}
+
+.footer-col h4{
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+.footer-about p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.footer-col ul li{
+    margin-bottom:12px;
+}
+
+.footer-col ul li a{
+    font-size:16px;
+}
+
+.footer-bottom{
+    padding:20px 0;
+    font-size:14px;
+}
+
+}
 
     </style>
 </head>
@@ -1555,14 +1645,14 @@ body{
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Packages</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Free Quote</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="freeQuote.html">Contact Us</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="freeQuote.html">Free Quote</a></li>
           <li><a href="#">Sitemap</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms & Conditions</a></li>
@@ -1573,15 +1663,15 @@ body{
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Book Editing</a></li>
-          <li><a href="#">Proofreading</a></li>
-          <li><a href="#">Book Layout</a></li>
-          <li><a href="#">Book Cover Design</a></li>
-          <li><a href="#">Children's Book Publishing</a></li>
-          <li><a href="#">Book Illustration</a></li>
-          <li><a href="#">Book Marketing</a></li>
-          <li><a href="#">Audiobook Publishing</a></li>
-          <li><a href="#">Author Website</a></li>
+          <li><a href="editing.html">Book Editing</a></li>
+          <li><a href="proofreading.html">Proofreading</a></li>
+          <li><a href="layout.html">Book Layout</a></li>
+          <li><a href="cover.html">Book Cover Design</a></li>
+          <li><a href="publishing.html">Children's Book Publishing</a></li>
+          <li><a href="illustration.html">Book Illustration</a></li>
+          <li><a href="marketing.html">Book Marketing</a></li>
+          <li><a href="audio.html">Audiobook Publishing</a></li>
+          <li><a href="A.html">Author Website</a></li>
         </ul>
       </div>
 
@@ -1589,19 +1679,19 @@ body{
       <div class="footer-col">
         <h4>Locations</h4>
         <ul>
-          <li><a href="#">Book Publishing Sydney</a></li>
-          <li><a href="#">Book Publishing Melbourne</a></li>
-          <li><a href="#">Book Publishing Brisbane</a></li>
-          <li><a href="#">Book Publishing Perth</a></li>
-          <li><a href="#">Book Publishing Adelaide</a></li>
+          <li><a href="lucationS.html">Book Publishing Sydney</a></li>
+          <li><a href="M.html">Book Publishing Melbourne</a></li>
+          <li><a href="B.html">Book Publishing Brisbane</a></li>
+          <li><a href="P.html">Book Publishing Perth</a></li>
+          <li><a href="A.html">Book Publishing Adelaide</a></li>
         </ul>
         
         <h4 style="margin-top: 35px;">Packages</h4>
         <ul>
-          <li><a href="#">Manuscript Rescue</a></li>
-          <li><a href="#">The Custom Package</a></li>
-          <li><a href="#">Multi Platform Package</a></li>
-          <li><a href="#">Global Distribution Package</a></li>
+           <li><a href="rescue.html">Manuscript Rescue</a></li>
+          <li><a href="packages.html">The Custom Package</a></li>
+          <li><a href="platform.html">Multi Platform Package</a></li>
+          <li><a href="global.html">Global Distribution Package</a></li>
         </ul>
       </div>
 

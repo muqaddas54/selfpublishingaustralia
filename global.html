@@ -602,6 +602,7 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
   position: relative;
   left: -10px;
 }
+
 .dropdown{
     text-align:center;
     padding-left:0;
@@ -796,6 +797,7 @@ background: linear-gradient(90deg, #febf01 25%, #fa9a0a);
     padding-left: 20px;
   }
 }
+
 
 
 
@@ -1454,599 +1456,386 @@ body{
     overflow-x:hidden;
 }
 
-
-
-.blog-intro-section {
- background-color: #fa9a0a13;
-   padding: 60px 50px;
-  margin-top: 90px;
+.custompkg-section {
+  background: #f7f8fa;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
 }
 
-.blog-container {
+.custompkg-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  position: relative;
+  padding: 0 40px;
 }
 
-.blog-content {
-  flex: 1;
-  color: #5a5a5a;
-  font-size: 15px;
-  line-height: 1.8;
+.custompkg-banner {
+  background: linear-gradient(135deg, #ffb703, #fa9a0a);
+  padding: 60px 0;
+  color: #fff;
 }
 
-.blog-title {
-  font-size: 40px;
-  color: #010d38;
+.custompkg-banner h1 {
+  font-size: 50px;
+  font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 15px;
-  text-decoration: underline;
-  text-decoration-color: #f5b400;
-  text-underline-offset: 8px;
+  margin: 0 0 12px 0;
 }
 
-.blog-sub {
-  font-size: 18px;
-  /* margin-bottom: 25px; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #1a1919;
-  line-height: 1.4;
+.custompkg-breadcrumb {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 15px;
 }
 
-.blog-content h3 {
-  font-size: 22px;
-  color: #010d38;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  font-weight: 600;
+.custompkg-main {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  align-items: flex-start;
 }
 
-.blog-content h4 {
-  font-size: 16px;
-  color: #4a5a7a;
-  margin-top: 20px;
-  margin-bottom: 8px;
-  font-weight: 600;
+.custompkg-sidebar {
+  width: 320px;
+  flex-shrink: 0;
 }
 
-.blog-content p {
-  margin-bottom: 15px;
-   font-size: 18px;
-  /* margin-bottom: 25px; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #1a1919;
-  line-height: 1.4;
-}
-
-.blog-sidebar{
-    width:220px;
+.custompkg-sidebar{
     position:relative;
 }
 
-.jump-btn{
-    position:fixed;
-    top:330px;          /* Navbar ke neeche */
-    display: inline-block;
-  background:linear-gradient(135deg, #ffb703, #fa9a0a);
+.custompkg-sidebar-inner{
+    background:#fff;
+    border-radius:8px;
+    padding:25px;
+    box-shadow:0 1px 4px rgba(0,0,0,.06);
 
-  color: #010d38;
-  padding: 12px 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-    transition:.3s;
-    z-index:100;
-}
-
-.jump-btn.stop{
     position:absolute;
-    top:auto;
-    bottom:0;
+    top:0;
+    /* left:0; */
+    width:320px;
 }
-
-/* ==========================================
-   BLOG INTRO RESPONSIVE
-========================================== */
-
-/* ---------- 991px ---------- */
-@media (max-width:991px){
-
-.blog-intro-section{
-    padding:50px 35px;
-}
-
-.blog-container{
-    gap:30px;
+.custompkg-main{
+    display:flex;
     align-items:flex-start;
 }
 
-.blog-content{
-    width:100%;
+.custompkg-sidebar{
+    width:320px;
+    position:relative;
+    min-height:100%;
 }
 
-.blog-title{
-    font-size:34px;
-    line-height:1.35;
+.custompkg-sidebar h3 {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4a5568;
+  margin: 0 0 20px 0;
 }
 
-.blog-sub{
-    font-size:17px;
-}
-
-.blog-content p{
-    font-size:17px;
-    line-height:1.7;
-}
-
-.blog-content h3{
-    font-size:21px;
-}
-
-.blog-sidebar{
-    width:180px;
-}
-
-.jump-btn{
-    top:250px;
-    padding:11px 18px;
-    font-size:13px;
-}
-
-}
-
-
-/* ---------- 768px ---------- */
-@media (max-width:768px){
-
-.blog-intro-section{
-    padding:40px 25px;
-}
-
-.blog-container{
-    display:block;
-}
-
-.blog-content{
-    width:100%;
-}
-
-.blog-title{
-    font-size:30px;
-    line-height:1.35;
-}
-
-.blog-sub{
-    font-size:16px;
-}
-
-.blog-content h3{
-    font-size:20px;
-}
-
-.blog-content p{
-    font-size:16px;
-    line-height:1.7;
-}
-
-/* Fixed Button Remove */
-
-.blog-sidebar{
-    display:none;
-}
-
-.jump-btn{
-    display:none;
-}
-
-}
-
-
-/* ---------- 600px ---------- */
-@media (max-width:600px){
-
-.blog-intro-section{
-    padding:35px 20px;
-}
-
-.blog-title{
-    font-size:34px;
-}
-
-.blog-sub{
-    font-size:15px;
-}
-
-.blog-content h3{
-    font-size:21px;
-}
-
-.blog-content p{
-    font-size:15px;
-    line-height:1.7;
-}
-
-}
-
-
-/* ---------- 425px ---------- */
-@media (max-width:425px){
-
-.blog-intro-section{
-    padding:30px 18px;
-}
-
-.blog-title{
-    font-size:32px;
-}
-
-.blog-sub{
-    font-size:14px;
-}
-
-.blog-content h3{
-    font-size:21px;
-}
-
-.blog-content p{
-    font-size:14px;
-    line-height:1.7;
-}
-
-}
-
-
-/* ---------- 360px & Below ---------- */
-
-
-
-
-
-.spa-blog-wrap {
-  background: #fa9a0a13;
-  padding: 50px 60px;
-}
-
-.spa-blog-grid {
-
-     width: 1010px;
-    
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px 200px;
-}
-
-.spa-blog-item {
- 
-     max-width: 90%;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-  overflow: hidden;
-  
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.spa-blog-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-}
-
-.spa-blog-top {
-  position: relative;
-  /* background: #0f1f3d; */
-  color: #fff;
-  padding: 25px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.spa-blog-top img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  background-position: center;
- background-size: cover;
-  /* clip-path: ellipse(60% 100% at 100% 50%); */
-}
-
-.spa-blog-badge {
-  background: #fff;
-  color: #0f1f3d;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 3px;
-  
-  display: inline-block;
-  margin-bottom: 12px;
-  width: fit-content;
-  z-index: 2;
-}
-
-.spa-blog-toptitle {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #f59e42;
-  font-weight: 600;
-  z-index: 2;
-  max-width: 55%;
-}
-
-.spa-blog-bottom {
-  padding: 20px 22px 22px 22px;
-}
-
-.spa-blog-title {
-  font-size: 22px;
-  color: #010d38;
-  font-weight: 600;
-  font-family:'Times New Roman', Times, serif;
-  line-height: 1.4;
-  margin-bottom: 10px;
-}
-
-.spa-blog-excerpt {
-  font-size: 16px;
-  color: #818182;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #f59e42;
-}
-
-.spa-blog-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.spa-blog-author {
+.custompkg-sidebar ul { list-style: none; padding: 0; margin: 0; }
+.custompkg-sidebar li {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 0;
+}
+.custompkg-sidebar li a {
+  color: #5b0cee;
+  text-decoration: underline;
+  font-size: 17px;
+}
+/* .custompkg-sidebar li.active a { color: #e85c2d; font-weight: 600; } */
+.custompkg-sidebar li img { width: 18px; height: 18px; }
+
+.custompkg-content {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  position: relative;
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
-.spa-blog-author img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  
-vertical-align: middle;
-  object-fit: cover;
-  background-position: center;
- background-size: cover;
+.custompkg-price-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #1e2f4f;
+  color: #fff;
+  /* padding: 18px 18px; */
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+}
+.custompkg-price-box br{
+    display: none;
+}
+.custompkg-price-box p { margin: 10px 0 8px 0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.custompkg-price-box .old-price { color: #f5b400; text-decoration: line-through; margin-right: 5px; }
+.custompkg-price-box .new-price { color: #f5b400; font-weight: 700; font-size: 18px; }
+.custompkg-price-box small { font-size: 12px; margin: 0 0 12px 0; }
+
+.custompkg-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.custompkg-title img { width: 24px; }
+.custompkg-title h2 { font-size: 34px; color: #252628; margin: 0; margin-left: -20px; 
+font-family: 'Times New Roman', Times, serif;
+margin-top: 20px;
+ }
+ .custompkg-content p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+ }
+
+.custompkg-btn {
+  background: linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  font-weight: 500;
+  border: none;
 }
 
-.spa-blog-author span {
- font-size: 16px;
-  color: #818182;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* line-height: 1.6; */
-  /* margin-bottom: 15px;
-  padding-bottom: 15px; */
-  /* border-bottom: 1px solid #e5e7eb; */
-  display: block;
+.custompkg-heading {
+  background:linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 25px 0;
+  font-weight: 600;
 }
 
-.spa-blog-author strong {
-  font-size: 20px;
-  color: #374151;
+.custompkg-cat {
+  background: #e0f2f1;
+  color: #151515;
+  padding: 10px 15px;
+  margin: 15px 0 0 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.custompkg-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+.custompkg-row.alt { background: #fafafa; }
+.custompkg-row .tick { color: #4caf50; font-weight: bold; font-size: 18px; }
+.custompkg-row img.logo { height: 28px; width: auto; }
+
+.custompkg-price-bar {
+  background:linear-gradient(135deg, #ffb703, #fa9a0a);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 16px;
   font-weight: 500;
 }
+.custompkg-price-bar s { opacity: 0.8; margin: 0 5px; }
 
-.spa-blog-info {
-  text-align: right;
+.custompkg-list { list-style: none; padding: 0; }
+.custompkg-list li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: flex-start;
 }
-
-.spa-blog-info .spa-time {
-  font-size: 13px;
-  /* font-size: 16px; */
-  color: #818182;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* line-height: 1.6;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e5e7eb; */
-  display: block;
-}
-
-.spa-blog-info .spa-date {
-  font-size: 12px;
-  /* font-size: 16px; */
-  color: #818182;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* line-height: 1.6; */
- 
-  /* border-bottom: 1px solid #e5e7eb; */
-}
+.custompkg-list .tick { color: #f47a3c; font-weight: bold; margin-top: 2px; }
+.custompkg-list a { color: #4a90e2; }
+ .custompkg-content p {
+  font-size: 17px; color: rgb(138, 136, 136);
+ }
 
 
 
-/* ==========================================
-   SPA BLOG RESPONSIVE
-========================================== */
+/* =====================================
+   CUSTOM PACKAGE RESPONSIVE
+===================================== */
 
-/* ---------- 991px ---------- */
-@media (max-width:991px){
-
-.spa-blog-wrap{
-    padding:45px 35px;
-}
-
-.spa-blog-grid{
-    width:100%;
-    grid-template-columns:repeat(2, minmax(0,1fr));
-    gap:30px;
-    margin:0;
-}
-
-.spa-blog-item{
-    max-width:100%;
-}
-
-.spa-blog-title{
-    font-size:20px;
-}
-
-.spa-blog-excerpt{
-    font-size:15px;
-}
-
-.spa-blog-author strong{
-    font-size:18px;
-}
-
-}
-
-
-/* ---------- 768px ---------- */
 @media (max-width:768px){
 
-.spa-blog-wrap{
-    padding:40px 25px;
+.custompkg-main{
+    display:block;
+    padding-top:25px;
 }
 
-.spa-blog-grid{
+.custompkg-container{
+    padding:0 20px;
+}
+
+/* Sidebar card */
+.custompkg-sidebar{
     width:100%;
-    grid-template-columns:1fr;
-    gap:28px;
-    margin:0;
+    margin-bottom:25px;
 }
 
-.spa-blog-item{
-    max-width:100%;
+.custompkg-sidebar-inner{
+    position:relative !important;
+    top:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+    width:100%;
 }
 
-.spa-blog-top{
-    height:220px;
+/* Content */
+
+.custompkg-content{
+    width:100%;
+    padding:25px 20px;
 }
 
-.spa-blog-title{
-    font-size:21px;
+/* Price box */
+
+.custompkg-price-box{
+    position:relative;
+    top:0;
+    right:0;
+    width:100%;
+    margin-bottom:25px;
 }
 
-.spa-blog-excerpt{
-    font-size:15px;
+/* Heading */
+
+.custompkg-title{
+    flex-wrap:wrap;
+}
+
+.custompkg-title h2{
+    font-size:24px;
+}
+
+.custompkg-banner h1{
+    font-size:32px;
+}
+
+.custompkg-row{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.custompkg-row span:first-child{
+    width: auto;
+}
+
+.custompkg-row .tick,
+.custompkg-row img.logo{
+    justify-self: end;
+    margin-top: 0;
 }
 
 }
 
-
-/* ---------- 600px ---------- */
 @media (max-width:600px){
 
-.spa-blog-wrap{
-    padding:35px 20px;
+.custompkg-container{
+    padding:0 15px;
 }
 
-.spa-blog-grid{
-    width:100%;
-    gap:24px;
+.custompkg-banner{
+    padding:55px 0;
 }
 
-.spa-blog-top{
-    height:200px;
+.custompkg-banner h1{
+    font-size:29px;
 }
 
-.spa-blog-bottom{
-    padding:18px;
-}
-
-.spa-blog-title{
-    font-size:19px;
-}
-
-.spa-blog-excerpt{
+.custompkg-breadcrumb{
     font-size:14px;
-    margin-bottom:12px;
+}
+.custompkg-main {
+  margin-top: 20px;
+}
+.custompkg-content{
+ 
+    padding:20px 15px;
 }
 
-.spa-blog-author img{
-    width:45px;
-    height:45px;
+.custompkg-price-box{
+  
+    padding:16px;
+}
+.custompkg-list li{
+  color: black;
 }
 
-.spa-blog-author strong{
+.custompkg-heading{
     font-size:17px;
 }
 
+.custompkg-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+}
+.custompkg-title img {display: none; }
+.custompkg-title h2 { font-size: 34px; color: #252628; margin: 0; margin-left: 0px; 
+font-family: 'Times New Roman', Times, serif;
+margin-top: 0px;
+line-height: 1.2;
+ }
+ .custompkg-content p {
+  font-size: 17px; color: rgb(34, 33, 33);
+ }
+ .custompkg-content br{
+  display: none;
+ }
+.custompkg-title h2 br{
+  display: none;
+}
+.custompkg-row{
+  
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
 }
 
-
-/* ---------- 425px ---------- */
-@media (max-width:425px){
-
-.spa-blog-wrap{
-    padding:30px 18px;
+.custompkg-row span:first-child{
+    width: auto;
 }
 
-.spa-blog-top{
-    height:180px;
+.custompkg-row .tick,
+.custompkg-row img.logo{
+    justify-self: end;
+    margin-top: 0;
 }
 
-.spa-blog-title{
-    font-size:18px;
+.custompkg-btn{
+    width:100%;
+    text-align:center;
 }
 
-.spa-blog-excerpt{
-    font-size:13.5px;
-}
-
-.spa-blog-meta{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:15px;
-}
-
-.spa-blog-info{
-    text-align:left;
-}
-
-}
-
-
-/* ---------- 360px ---------- */
-@media (max-width:360px){
-
-.spa-blog-wrap{
-    padding:25px 15px;
-}
-
-.spa-blog-top{
-    height:170px;
-}
-
-.spa-blog-bottom{
-    padding:15px;
-}
-
-.spa-blog-title{
-    font-size:17px;
-}
-
-.spa-blog-excerpt{
-    font-size:13px;
-}
-
-.spa-blog-author strong{
-    font-size:16px;
+.custompkg-price-bar{
+    text-align:center;
+    line-height:1.8;
 }
 
 }
+
+
+
+
+
  @media (max-width:480px){
 
 .site-footer{
@@ -2149,394 +1938,140 @@ vertical-align: middle;
 
 
 
-<section class="blog-intro-section">
-  <div class="blog-container">
+
+
+
+
+
+
+
+
+<section class="custompkg-section">
+
+  <!-- Top Banner -->
+  <div class="custompkg-banner">
+    <div class="custompkg-container">
+      <h1>Global Distribution Package</h1>
+      <div class="custompkg-breadcrumb">Home / Packages / Global Distribution Package</div>
+    </div>
+  </div>
+
+  <div class="custompkg-container custompkg-main">
     
-    <div class="blog-content">
-      <h1 class="blog-title"> Thought Self Publishing Blogs & Insights for Australian Authors</h1>
-      <p class="blog-sub">Practical insights, expert guidance, and real strategies to help authors successfully navigate and thrive in Australia's Book Publishing landscape.</p>
+    <!-- Left Sidebar -->
+    <aside class="custompkg-sidebar">
+      <div class="custompkg-sidebar-inner">
+        <h3>Packages</h3>
+        <ul>
+          <li>
+            <img src="download (9).png" alt="">
+            <a href="rescue.html">Manuscript Rescue</a>
+          </li>
+          <li class="active">
+            <img src="download (10).png" alt="">
+            <a href="packages.html">The Custom Package</a>
+          </li>
+          <li>
+            <img src="download (11).png" alt="">
+            <a href="platform.html">Multi Platform Package</a>
+          </li>
+          <li>
+            <img src="download (12).png" alt="">
+            <a href="global.html">Global Distribution Package</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-      <p>Publishing a book is one of the most important decisions you will make as an author. But between formatting, platform selection, cover design, and distribution, the process can feel overwhelming fast especially without the right guidance.</p>
+    <!-- Right Content -->
+    <div class="custompkg-content">
+      
+      <!-- Price Box -->
+      <div class="custompkg-price-box">
+        <p>Investment</p>
+        <p><span class="old-price">From 7199 AUD</span> <span class="new-price">4999 AUD</span></p>
+        <small>(30% OFF)</small>
+      </div>
 
-      <h3>That is exactly what this publishing blog page is built for.</h3>
-      <p>Self Publishing Australia is a dedicated resource for authors who want real, actionable publishing insights without the guesswork. Whether you are new to publishing, or have titles already live on Amazon, you will find practical book publishing tips, step-by-step self publishing guides and honest industry analysis for the Australian market.</p>
+      <!-- Title -->
+      <div class="custompkg-title">
+        <img src="download (10).png" alt="" style="margin-right: 10px; margin-top: 20px;" >
+        <h2>Global Distribution Package</h2>
+      </div>
+<br><br>
+      <p>For established authors and high-impact professionals who want premium publishing, global reach, a powerful author brand, marketing, and priority support.
 
-      <h3>What Makes these Blog Different</h3>
-      <p>Most writing blogs are built around the US publishing market. They reference USD pricing, American ISBNs, and platforms that do not always apply cleanly to Australian authors navigating AUD costs, GST obligations, Thorpe-Bowker registration, and the National Library's legal deposit requirements.</p>
+</p>
 
-      <p>Every article on this blog is written with the Aussie author experience at the centre. You will not need to mentally convert advice or wonder whether it applies to you. It does because it was built for you.</p>
+      <p>The Global Distribution Package is our most advanced, white-glove publishing experience crafted for professionals such as coaches, motivational speakers, entrepreneurs, doctors, engineers, and architects who want more than just a published book. This package is designed to position you as an authority in your field with a strong global presence.
 
-      <h3>What You Will Find Here</h3>
-      <p>These blog covers every stage of the self publishing journey, from first draft to live listing and beyond.</p>
+</p>
 
-      <h3>Self Publishing Guides</h3>
-      <p>Step-by-step, easy-to-follow guides to help authors take control of their publishing journey from manuscript prep to final upload.</p>
+      <p>You receive priority support, a dedicated publishing manager, and a seamless, fully managed experience from manuscript to worldwide distribution. Your book is strategically published across leading global platforms, making it available in key markets including Australia, the US, and beyond.
 
-      <h3>Amazon KDP Tips</h3>
-      <p>Learn about royalties, profitable keywords, categories, pricing strategies, and upcoming royalty changes affecting Australian authors.</p>
+</p>
 
-      <h3>Book Publishing Tips for Every Budget</h3>
-      <p>Explore editing tiers, formatting options, cover design investment levels, and when DIY publishing makes sense.</p>
+      <p>This package is ideal for authors who view their book as a personal brand asset, lead generation tool, and long-term authority builder not just a one-time publication.
 
-      <h3>Author Resources Australia</h3>
-      <p>Discover trusted editors, designers, distributors, legal deposit information, and valuable Australian publishing resources.</p>
+</p>
 
-      <h3>Book Marketing Advice</h3>
-      <p>Learn launch strategies, Amazon optimisation, backend keywords, reader engagement, and long-term book sales techniques.</p>
+      <a href="#" class="custompkg-btn openModalBtn" >Order Now</a>
 
-      <h3>Book Design and Layout</h3>
-      <p>Understand professional cover design, interior formatting, KDP requirements, and what separates quality publishing from poor formatting.</p>
+      <!-- What's Included -->
+      <h3 class="custompkg-heading">What's Included?</h3>
 
-      <h3>Children's Book Publishing</h3>
-      <p>Explore illustration specs, trim sizes, print quality standards, and fixed-format ebook requirements for children's books.</p>
+      <div class="custompkg-table">
 
-      <h3>Start Here</h3>
-      <p>If you are new to self publishing, begin with our complete <i>Self Publishing Australia Complete Guide 2026</i> — a full walkthrough of the process from manuscript to live listing across multiple platforms.</p>
+        <h4 class="custompkg-cat">Book Design & Formatting</h4>
+        <div class="custompkg-row"><span>Bespoke Cover Design</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Professional Interior Formatting</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Custom Typography Selection</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Genre-Specific Layout Optimization</span><span class="tick">✓</span></div>
 
-      <p>New articles are constantly published. Browse by category, bookmark what matters, and return whenever you need a simple answer to your next publishing question.</p>
+        <h4 class="custompkg-cat">Publishing & Distribution</h4>
+        <div class="custompkg-row"><span>Publishing on Amazon KDP</span><img src="amazon-kindle-marquee-img.webp" class="logo"></div>
+        <div class="custompkg-row alt"><span>Publishing on IngramSpark</span><img src="IngramSpark-marquee-img.webp" class="logo"></div>
+        <div class="custompkg-row"><span>Publishing on Draft2Digital</span><img src="draft-and-digital.webp" class="logo"></div>
+        <div class="custompkg-row alt"><span>Publishing on Booktopia</span><img src="Booktopia-logo.webp" class="logo"></div>
+
+        <h4 class="custompkg-cat">Marketing & Discoverability</h4>
+        <div class="custompkg-row"><span>KDP Keyword Research</span><span class="tick">✓</span></div>
+        <div class="custompkg-row alt"><span>Category Selection Assistance</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Author Branding</h4>
+        <div class="custompkg-row"><span>Author Bio Page Creation</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Project Support</h4>
+        <div class="custompkg-row alt"><span>Dedicated Project Manager</span><span class="tick">✓</span></div>
+        <div class="custompkg-row"><span>Unlimited Email Support</span><span class="tick">✓</span></div>
+
+        <h4 class="custompkg-cat">Publishing Essentials</h4>
+        <div class="custompkg-row alt"><span>ISBN Assignment & Setup</span><span class="tick">✓</span></div>
+
+      </div>
+
+      <!-- Price Bar -->
+      <div class="custompkg-price-bar">
+        From <s>2116 AUD</s> <b>1799 AUD</b> (15% OFF)
+      </div>
+      <a href="#" class="custompkg-btn openModalBtn">Lets Do This</a>
+
+      <!-- Pricing and Inclusions -->
+      <h3>Pricing and Inclusions</h3>
+      <ul class="custompkg-list">
+        <li><span class="tick">✓</span> All pricing is quoted in AUD and may be subject to GST, depending on the final service arrangement and invoice structure. The exact amount shown in a package should clearly state whether GST is included or added at checkout.</li>
+        <li><span class="tick">✓</span> Each package should also specify what the book will receive, including formatting, cover design, Amazon upload support, metadata setup, file checks, and revisions where applicable.</li>
+        <li><span class="tick">✓</span> Extra services like editing depth, premium cover concepts, marketing campaigns, or extended revisions should be listed separately if they are not included in the package price. That keeps the pricing clear, fair, and easy to compare for Australian authors.</li>
+        <li><span class="tick">✓</span> At Self Publishing Australia, we collaborate with highly experienced professionals who bring deep industry knowledge to every project. Our team members have worked with or alongside some of the world's most respected publishing houses, ensuring your book is handled with the highest level of expertise.</li>
+      </ul>
+
     </div>
-
-    <div class="blog-sidebar">
-      <a href="#blogs" class="jump-btn">Jump to Read Blogs ↓</a>
-    </div>
-
   </div>
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="spa-blog-wrap">
-  <div class="spa-blog-grid">
-
-    <!-- Card 1 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="self-publishing-in-australia-complete-guide-2026.jpg.webp" alt="Blog 1">
-      </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Self Publishing Australia : Complete Self Publishing Guide for Australian Authors 2026</h3>
-        <p class="spa-blog-excerpt">Learn self-publishing in Australia 2026 including costs, printing, cities, companies, and step-by-step guide to getting your book published.</p>
-       <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">June 23 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 2 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="self-publishing-melbourne-step-by-step-guide.webp" alt="Blog 2">
-         </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Self Publishing Melbourne: Step by Step Guide for Australian Authors</h3>
-        <p class="spa-blog-excerpt">Melbourne authors are publishing smarter now. They want control, better margins, and a faster route to market. That is exactly where self publishing Melbourne stands out.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">June 23 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="self-publishing-cost-in-australia-2026-breakdown.webp" alt="Blog 3">
-       </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Self Publishing Cost in Australia : 2026 Breakdown</h3>
-        <p class="spa-blog-excerpt">Self publishing cost in Australia is not one fixed figure. It changes with editing depth, design quality, printing method, and how far you want the book to travel.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">June 29 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 4 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="cost-of-self-publishing-a-book-in-sydney.webp" alt="Blog 4">
-     </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Cost Of Self Publishing a Book in Sydney</h3>
-        <p class="spa-blog-excerpt">Understanding the cost of self publishing a book in Sydney is not just about numbers. It is about knowing where to invest and where to stay lean.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">June 30 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 5 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="book-publishing-cost-what-authors-should-budget.webp" alt="Blog 5">
-      </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Book Publishing Cost: What Authors Should Budget</h3>
-        <p class="spa-blog-excerpt">Understanding book publishing cost is not about chasing the lowest number. It is about knowing where your money creates real impact.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">July 1 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 6 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="book-publication-cost-complete-pricing-guide.webp" alt="Blog 6">
-      </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Book Publication Cost: Complete Pricing Guide</h3>
-        <p class="spa-blog-excerpt">How much does publication actually cost? The answer depends on your goals. The price involves preparing a viable budget that supports quality, reach, and long-term.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">July 2 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 7 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="publishing-cost-of-a-book-hidden-fees-exposed.webp" alt="Blog 7">
-        </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Publishing Cost Of a Book: Hidden Fees Exposed</h3>
-        <p class="spa-blog-excerpt">The publishing cost of a book is often misunderstood. Most authors plan for editing, design, and printing. Fewer plans for what happen around those stages. That is where budgets break.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">July 6 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 8 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="getting-a-book-published-in-australia-traditional-vs-self.webp" alt="Blog 8">
-    </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Getting a Book Published in Australia: Traditional Vs Self</h3>
-        <p class="spa-blog-excerpt">Getting a book published in Australia is no longer limited to one path. Authors now choose between traditional publishing and self-publishing based on control, speed, and financial return.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">Apr 30 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 9 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="book-publishers-adelaide-best-options-for-sa-authors.webp" alt="Blog 9">
-        
-      </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">Book Publishers Adelaide: Best Option For SA Authors</h3>
-        <p class="spa-blog-excerpt">Choosing between book publishers in Adelaide is no longer a simple decision. South Australian authors now have two clear paths. Traditional publishing offers structure and industry backing.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">Apr 30 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 10 -->
-    <article class="spa-blog-item">
-      <div class="spa-blog-top">
-        <img src="HOW-TO-FIND-RELIABLE-SELF-PUBLISHING-COMPANIES-IN-AUSTRALIA.webp" alt="Blog 10">
-
-      </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">How to fine Reliable Self Publishing Companies in Australia</h3>
-        <p class="spa-blog-excerpt">Finding the right self publishing companies Australia is not as simple as comparing prices.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">May 4 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Card 11 to 13 Dummy -->
-    <article class="spa-blog-item">
-        <div class="spa-blog-top">
-            <img src="SELF-PUBLISHING-COMPANIES-LA-CARTE-VS-FULL-SERVICE.webp">
-         </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">How to fine Reliable Self Publishing Companies in Australia</h3>
-        <p class="spa-blog-excerpt">Finding the right self publishing companies Australia is not as simple as comparing prices.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">May 4 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article class="spa-blog-item"><div class="spa-blog-top"><img src="SELF-PRINT-BOOK-DIY-VS-PROFESSIONAL-PRINTING.webp"> </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">How to fine Reliable Self Publishing Companies in Australia</h3>
-        <p class="spa-blog-excerpt">Finding the right self publishing companies Australia is not as simple as comparing prices.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">May 4 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="spa-blog-item"><div class="spa-blog-top"><img src="SELF-PUBLISH-BOOK-PRINTING-PRINTING-OPTIONS-COMPARED.webp"> </div>
-      <div class="spa-blog-bottom">
-        <h3 class="spa-blog-title">How to fine Reliable Self Publishing Companies in Australia</h3>
-        <p class="spa-blog-excerpt">Finding the right self publishing companies Australia is not as simple as comparing prices.</p>
-        <div class="spa-blog-meta">
-          <div class="spa-blog-author">
-            <img src="Harrison-Clarke-img.webp" alt="James Wilson">
-            <div>
-              <span>Author</span>
-              <strong>James Wilson</strong>
-            </div>
-          </div>
-          <div class="spa-blog-info">
-            <span class="spa-time">10 mins</span>
-            <span class="spa-date">May 4 2026</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-
-
-
-
+  
 
 
 
@@ -2885,43 +2420,57 @@ window.addEventListener("scroll", () => {
 
 
 
+const sidebar = document.querySelector(".custompkg-sidebar-inner");
+const parent = document.querySelector(".custompkg-sidebar");
+const content = document.querySelector(".custompkg-content");
 
+function sidebarScroll(){
 
+    const start = parent.offsetTop - 130;
 
+    const end =
+        content.offsetTop +
+        content.offsetHeight -
+        sidebar.offsetHeight -
+        120;
 
+    if(window.scrollY < start){
 
-
-
-
-
-
-
-
-
-
-
-
-const blogSection = document.querySelector(".blog-intro-section");
-const sidebar = document.querySelector(".blog-sidebar");
-const jumpBtn = document.querySelector(".jump-btn");
-
-window.addEventListener("scroll", () => {
-
-    const sectionRect = blogSection.getBoundingClientRect();
-    const sectionBottom = sectionRect.bottom;
-
-    // Jab footer ke qareeb pohanch jaye
-    if (sectionBottom <= (jumpBtn.offsetHeight + 350)) {
-
-        jumpBtn.classList.add("stop");
-
-    } else {
-
-        jumpBtn.classList.remove("stop");
+        sidebar.style.position="absolute";
+        sidebar.style.top="0";
+        sidebar.style.bottom="auto";
 
     }
 
-});
+    else if(window.scrollY >= start && window.scrollY <= end){
+
+        sidebar.style.position="fixed";
+        sidebar.style.top="180px";
+        sidebar.style.bottom="auto";
+
+    }
+
+    else{
+
+        sidebar.style.position="absolute";
+        sidebar.style.top=(end-start)+"px";
+        sidebar.style.bottom="auto";
+
+    }
+
+}
+
+window.addEventListener("scroll",sidebarScroll);
+window.addEventListener("resize",sidebarScroll);
+sidebarScroll();
+
+
+
+
+
+
+
+
 </script>
 
 </body>
